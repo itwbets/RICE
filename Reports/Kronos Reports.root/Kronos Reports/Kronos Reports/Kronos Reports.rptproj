@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+IiQvUmVwb3J0cy9Lcm9ub3MgUmVwb3J0cy5yb290L0tyb25vcyBSZXBvcnRzIiwgSUNBQUFBQUE8L1Byb2plY3ROYW1lPg0KICA8QXV4UGF0aD48L0F1eFBhdGg+DQogIDxMb2NhbFBhdGg+Li48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPk1TU0NDSTpNaWNyb3NvZnQgVmlzdWFsIFNvdXJjZVNhZmU8L1Byb3ZpZGVyPg0KPC9Tb3VyY2VDb250cm9sSW5mbz4=</State>
+  <DataSources>
+    <ProjectItem>
+      <Name>KART_Staging.rds</Name>
+      <FullPath>KART_Staging.rds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Kronos.rds</Name>
+      <FullPath>Kronos.rds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Kronos_Production.rds</Name>
+      <FullPath>Kronos_Production.rds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>KronosArchives.rds</Name>
+      <FullPath>KronosArchives.rds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>KronosV6.rds</Name>
+      <FullPath>KronosV6.rds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MyERP.rds</Name>
+      <FullPath>MyERP.rds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <Reports>
+    <ProjectItem>
+      <Name>Daily Labour Report Enhanced.rdl</Name>
+      <FullPath>Daily Labour Report Enhanced.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Daily Labour Report.rdl</Name>
+      <FullPath>Daily Labour Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Employee Group.rdl</Name>
+      <FullPath>Employee Group.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ERP Web Report Access.rdl</Name>
+      <FullPath>ERP Web Report Access.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Kronos BU Access Report.rdl</Name>
+      <FullPath>Kronos BU Access Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Labour Hours Report.rdl</Name>
+      <FullPath>Labour Hours Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Monthly Accruals.rdl</Name>
+      <FullPath>Monthly Accruals.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>My Resorts.rdl</Name>
+      <FullPath>My Resorts.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Pay Code Test.rdl</Name>
+      <FullPath>Pay Code Test.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PayCodesWorked - Archive.rdl</Name>
+      <FullPath>PayCodesWorked - Archive.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PayCodesWorked.rdl</Name>
+      <FullPath>PayCodesWorked.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PayCodesWorkedByBU.rdl</Name>
+      <FullPath>PayCodesWorkedByBU.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RapportAssurance-Emploi.rdl</Name>
+      <FullPath>RapportAssurance-Emploi.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Retention Premium Report.rdl</Name>
+      <FullPath>Retention Premium Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Salary Equity Report.rdl</Name>
+      <FullPath>Salary Equity Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tremblant Daily Labour Report.rdl</Name>
+      <FullPath>Tremblant Daily Labour Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tremblant Labour Report.rdl</Name>
+      <FullPath>Tremblant Labour Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tremblant Stat holiday Summary - Retail.rdl</Name>
+      <FullPath>Tremblant Stat holiday Summary - Retail.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tremblant Stat Holiday Summary.rdl</Name>
+      <FullPath>Tremblant Stat Holiday Summary.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vacation Accrual.rdl</Name>
+      <FullPath>Vacation Accrual.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Work Order Detail Report.rdl</Name>
+      <FullPath>Work Order Detail Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tremblant Employee List.rdl</Name>
+      <FullPath>Tremblant Employee List.rdl</FullPath>
+    </ProjectItem>
+  </Reports>
+  <Configurations>
+    <Configuration>
+      <Name>Debug</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <TargetServerURL>http://srv-ilab-krtdev/ReportServer</TargetServerURL>
+        <TargetFolder>Kronos Reports</TargetFolder>
+        <TargetDataSourceFolder>Kronos Reports/Data Sources</TargetDataSourceFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>DebugLocal</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <TargetFolder>Kronos Reports</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Release</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <TargetServerURL>http://bl-van-itsm03/intrawestreporting</TargetServerURL>
+        <TargetFolder>Kronos Reports</TargetFolder>
+        <TargetDataSourceFolder>Kronos Reports/Data Sources</TargetDataSourceFolder>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

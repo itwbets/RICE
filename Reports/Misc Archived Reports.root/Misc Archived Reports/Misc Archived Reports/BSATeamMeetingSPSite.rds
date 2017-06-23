@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="BSATeamMeetingSPSite">
+  <ConnectionProperties>
+    <Extension>XML</Extension>
+    <ConnectString>http://entapp/BSA/TeamMeeting/_vti_bin/lists.asmx</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>3de90002-4626-4a92-9b2b-56953b5ea4f2</DataSourceID>
+</RptDataSource>

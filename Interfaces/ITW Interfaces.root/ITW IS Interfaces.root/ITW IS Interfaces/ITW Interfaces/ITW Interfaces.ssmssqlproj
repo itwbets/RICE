@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ITW Interfaces">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="sql11\itsm:IDIRECTORY\mattf">
+          <Created>2011-04-07T09:03:36.9085588-07:00</Created>
+          <Type>SQL</Type>
+          <Server>sql11\itsm</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="srv-ilab-krtdev:IDIRECTORY\mattf">
+          <Created>2011-03-23T09:45:23.1332756-07:00</Created>
+          <Type>SQL</Type>
+          <Server>srv-ilab-krtdev</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="wsvan-126:IDIRECTORY\mattf">
+          <Created>2011-03-23T09:44:39.7739006-07:00</Created>
+          <Type>SQL</Type>
+          <Server>wsvan-126</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>master</InitialDB>
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="Interface_Metadata DB objects.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql11\itsm:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql11\itsm</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Interface_Metadata DB objects.sql</FullPath>
+        </FileNode>
+        <FileNode Name="initial Table Data.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql11\itsm:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql11\itsm</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>initial Table Data.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+  <SccProjectName>"$/Interfaces/ITW Interfaces.root/ITW IS Interfaces.root/ITW IS Interfaces", WGAAAAAA</SccProjectName>
+  <SccAuxPath />
+  <SccLocalPath>..</SccLocalPath>
+  <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+</SqlWorkbenchSqlProject>

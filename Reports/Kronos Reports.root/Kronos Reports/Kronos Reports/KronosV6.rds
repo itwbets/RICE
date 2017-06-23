@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>KronosV6</Name>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=10.31.63.86;Initial Catalog=WFCDB</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>fb29a2ac-e109-4482-978b-5beb9f85b4d0</DataSourceID>
+</RptDataSource>

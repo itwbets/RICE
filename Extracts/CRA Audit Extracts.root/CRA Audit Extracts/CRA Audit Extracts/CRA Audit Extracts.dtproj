@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProductVersion>10.0.1600.22</ProductVersion>
+  <SchemaVersion>9.0.1.0</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+IiQvRXh0cmFjdHMvQ1JBIEF1ZGl0IEV4dHJhY3RzLnJvb3QvQ1JBIEF1ZGl0IEV4dHJhY3RzIiwgSEFBQUFBQUE8L1Byb2plY3ROYW1lPg0KICA8QXV4UGF0aD48L0F1eFBhdGg+DQogIDxMb2NhbFBhdGg+Li48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPk1TU0NDSTpNaWNyb3NvZnQgVmlzdWFsIFNvdXJjZVNhZmU8L1Byb3ZpZGVyPg0KPC9Tb3VyY2VDb250cm9sSW5mbz4=</State>
+  <Database>
+    <Name>CRA Audit Extracts.database</Name>
+    <FullPath>CRA Audit Extracts.database</FullPath>
+  </Database>
+  <Cubes />
+  <Dimensions />
+  <DataSources />
+  <DataSourceViews />
+  <MiningModels />
+  <Roles />
+  <Miscellaneous>
+    <ProjectItem>
+      <Name>FY.dtsConfig</Name>
+      <FullPath>FY.dtsConfig</FullPath>
+    </ProjectItem>
+  </Miscellaneous>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <OutputPath>bin</OutputPath>
+        <ConnectionMappings />
+        <ConnectionProviderMappings />
+        <ConnectionSecurityMappings />
+        <DatabaseStorageLocations />
+      </Options>
+    </Configuration>
+  </Configurations>
+  <DTSPackages>
+    <DtsPackage FormatVersion="3">
+      <Name>F0006.dtsx</Name>
+      <FullPath>F0006.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>F0010.dtsx</Name>
+      <FullPath>F0010.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>F0101-116.dtsx</Name>
+      <FullPath>F0101-116.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>F03B11.dtsx</Name>
+      <FullPath>F03B11.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>F0411.dtsx</Name>
+      <FullPath>F0411.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>F0901.dtsx</Name>
+      <FullPath>F0901.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>F0902.dtsx</Name>
+      <FullPath>F0902.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>F0911 by Batch.dtsx</Name>
+      <FullPath>F0911 by Batch.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>F0911.dtsx</Name>
+      <FullPath>F0911.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>F0911 Extract.dtsx</Name>
+      <FullPath>F0911 Extract.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>CRA Audit - Group - All.dtsx</Name>
+      <FullPath>CRA Audit - Group - All.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+  </DTSPackages>
+</Project>

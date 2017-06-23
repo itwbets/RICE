@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Kronos Report Queries">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="sql11\ITSM:IDIRECTORY\mattf">
+          <Created>2010-01-21T15:57:26.6158244-08:00</Created>
+          <Type>SQL</Type>
+          <Server>sql11\ITSM</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="srv-van-krsqlpr:IDIRECTORY\mattf">
+          <Created>2010-03-19T15:12:08.6809409-07:00</Created>
+          <Type>SQL</Type>
+          <Server>srv-van-krsqlpr</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="srv-van-ksqltst:IDIRECTORY\mattf">
+          <Created>2010-01-11T16:32:38.5427648-08:00</Created>
+          <Type>SQL</Type>
+          <Server>srv-van-ksqltst</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>TKCSDB</InitialDB>
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="sec report sp permissions.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>sec report sp permissions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="sec param and table Permissions.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>sec param and table Permissions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="qry Transfer user-defined bu-division relationship.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-krsqlpr:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-krsqlpr</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>qry Transfer user-defined bu-division relationship.sql</FullPath>
+        </FileNode>
+        <FileNode Name="sp stp_itw_util_Scamble_EE_Data.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>sp stp_itw_util_Scamble_EE_Data.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_int_cleanup_itw_bu_hierarchy.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_int_cleanup_itw_bu_hierarchy.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_param_Get_BUs.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_param_Get_BUs.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_param_Get_Divisions.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_param_Get_Divisions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_param_Get_High_Level_Job_Steps.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_param_Get_High_Level_Job_Steps.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_param_Get_Jobs.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_param_Get_Jobs.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_param_Get_Labour_Levels.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_param_Get_Labour_Levels.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_param_Get_Wage_Types.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_param_Get_Wage_Types.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_param_Labour_Account_Sets.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_param_Labour_Account_Sets.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_rpt_daily_labour.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_rpt_daily_labour.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_rpt_daily_labour_enhanced.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_rpt_daily_labour_enhanced.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_rpt_daily_labour_tr2.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql11\ITSM:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql11\ITSM</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_rpt_daily_labour_tr2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_rpt_daily_labour_tr_wo2.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_rpt_daily_labour_tr_wo2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_rpt_daily_labour_wo.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_rpt_daily_labour_wo.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_rpt_labour_hours2.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_rpt_labour_hours2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_rpt_labour_tr2.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_rpt_labour_tr2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_rpt_retention2.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_rpt_retention2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_rpt_salary_equity.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_rpt_salary_equity.sql</FullPath>
+        </FileNode>
+        <FileNode Name="stp_itw_rpt_work_order_detail.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>stp_itw_rpt_work_order_detail.sql</FullPath>
+        </FileNode>
+        <FileNode Name="table itw_bu_hierarchy.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>table itw_bu_hierarchy.sql</FullPath>
+        </FileNode>
+        <FileNode Name="table itw_wage_type.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:srv-van-ksqltst:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>srv-van-ksqltst</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>table itw_wage_type.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+  <SccProjectName>"$/Reports/Kronos Reports.root/Kronos Report Queries.root/Kronos Report Queries", UCAAAAAA</SccProjectName>
+  <SccAuxPath />
+  <SccLocalPath>..</SccLocalPath>
+  <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+</SqlWorkbenchSqlProject>

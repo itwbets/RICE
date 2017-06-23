@@ -1,0 +1,1864 @@
+<?xml version="1.0"?><DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts" DTS:ExecutableType="SSIS.Package.2">
+<DTS:Property DTS:Name="PackageFormatVersion">3</DTS:Property>
+<DTS:Property DTS:Name="VersionComments"></DTS:Property>
+<DTS:Property DTS:Name="CreatorName">IDIRECTORY\MattF</DTS:Property>
+<DTS:Property DTS:Name="CreatorComputerName">WSVAN-185</DTS:Property>
+<DTS:Property DTS:Name="CreationDate" DTS:DataType="7">6/15/2006 10:48:16 AM</DTS:Property>
+<DTS:Property DTS:Name="PackageType">5</DTS:Property>
+<DTS:Property DTS:Name="ProtectionLevel">1</DTS:Property>
+<DTS:Property DTS:Name="MaxConcurrentExecutables">-1</DTS:Property>
+<DTS:Property DTS:Name="PackagePriorityClass">0</DTS:Property>
+<DTS:Property DTS:Name="VersionMajor">1</DTS:Property>
+<DTS:Property DTS:Name="VersionMinor">0</DTS:Property>
+<DTS:Property DTS:Name="VersionBuild">48</DTS:Property>
+<DTS:Property DTS:Name="VersionGUID">{11D57F01-1071-49EE-9066-5C313611BB71}</DTS:Property>
+<DTS:Property DTS:Name="EnableConfig">-1</DTS:Property>
+<DTS:Property DTS:Name="CheckpointFileName"></DTS:Property>
+<DTS:Property DTS:Name="SaveCheckpoints">0</DTS:Property>
+<DTS:Property DTS:Name="CheckpointUsage">0</DTS:Property>
+<DTS:Property DTS:Name="SuppressConfigurationWarnings">0</DTS:Property>
+<DTS:ConnectionManager>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">F0901</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{465CD626-24FB-440B-997F-C9C6816B80BA}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">FLATFILE</DTS:Property><DTS:PropertyExpression DTS:Name="ConnectionString">@[User::FilePath] + "\\Data\\" + @[User::CurrentCompanySetName]  + " - F0901 - " + @[User::Company] + ".csv"</DTS:PropertyExpression><DTS:ObjectData><DTS:ConnectionManager>
+<DTS:Property DTS:Name="FileUsageType">0</DTS:Property>
+<DTS:Property DTS:Name="Format">Delimited</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">1033</DTS:Property>
+<DTS:Property DTS:Name="Unicode">0</DTS:Property>
+<DTS:Property DTS:Name="HeaderRowsToSkip">0</DTS:Property>
+<DTS:Property DTS:Name="HeaderRowDelimiter" xml:space="preserve">_x000D__x000A_</DTS:Property>
+<DTS:Property DTS:Name="ColumnNamesInFirstDataRow">-1</DTS:Property>
+<DTS:Property DTS:Name="RowDelimiter" xml:space="preserve"></DTS:Property>
+<DTS:Property DTS:Name="DataRowsToSkip">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualifier">&lt;none&gt;</DTS:Property>
+<DTS:Property DTS:Name="CodePage">1252</DTS:Property>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">5</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMCO</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{EF901263-9846-478E-92E4-F9C9890FE8FB}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">8</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMAID</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{8EF6E68B-CD7D-49DF-BBDB-741A3B2C50EF}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">12</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMMCU</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{74C42E3A-7CDC-4C22-902A-89B2B49DA81F}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">6</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMOBJ</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{5210DDCE-2BCC-4289-B2E6-77895474094D}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">8</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMSUB</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{AEE3F1C0-1481-466F-8E0A-3CC43A0CAFE1}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">25</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMANS</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{ED2CDB53-8F2E-4A6A-A200-D5F22109E5A6}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">30</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMDL01</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B8B6FC7E-2DEC-46F1-B9CD-13966B84200D}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">1</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMLDA</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{FF12380F-5C3E-4AEE-889D-5699BD490511}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMBPC</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{15C3444E-729C-4881-8712-F9B32DC4CCC5}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">1</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMPEC</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{114F92D2-BE7E-4E8B-A3A3-5D0760F99C0E}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">1</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMBILL</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{0077D35B-2118-4842-A0D6-E9371C5FE343}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMCRCD</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{A35CA4BE-636D-415D-8E5E-156E6B589983}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">2</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMUM</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{CD4E447F-C35B-4A0C-8FCD-81E7984D1BA3}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR001</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{9F7C50E6-1CC4-4B28-B2B8-C1304B49434E}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR002</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{5AF420D4-32FB-426A-9DD8-5B6660C3A3F5}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR003</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B2B49D1F-4431-43D4-87B4-E915ED1091AD}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR004</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{4EC8FF31-06DF-4D1B-BE97-4EDE23399D7D}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR005</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{E2B08E68-1A68-42A5-B5B7-EFAC961F4A95}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR006</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{785C5A02-E109-493D-8EB8-1B4E2CC2F3CC}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR007</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C619D3A1-F73C-45E6-A7D5-500A3947414C}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR008</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{3A19FCA3-6281-4F88-81D1-1825EF788FCD}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR009</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{96182827-49D2-4A6F-93E0-81DB0A209719}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR010</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{68F49A55-14FA-4CEB-AA7C-08CCFF699B3E}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR011</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{13C085F4-75B4-4FEA-9BC9-D73136384841}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR012</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{DF97702D-F1C4-4465-97A9-EAA6D2241867}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR013</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{1E0E1615-15DE-493A-8825-A19DF8EB2FD9}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR014</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{3CD44FD1-7AD0-4C16-A107-8D1AC916CB24}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR015</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{1E4E91BF-200A-48DF-828D-B3E561A0A0BF}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR016</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{F358D476-B7EE-4A60-BCDE-F488B5F73C87}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR017</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B5139460-7E26-46B7-A017-8C996555060B}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR018</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{7EE00249-BF71-463B-95DD-984209AA2BAD}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR019</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{8A0880B1-2FE6-4C10-BE29-735D3288F83E}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR020</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{CC2D2EE0-7F41-4B8C-AF8B-A6EE72753117}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">10</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR021</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C95D2C85-7DA7-48F0-8A48-9719C9E5BA04}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">10</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR022</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{55DC0359-6763-44EE-9EE9-3AF4662BC7FC}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">10</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMR023</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{16AF4239-F477-4EA8-9083-2D27D53BB459}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">6</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMOBJA</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{6B866950-B4C5-42C0-8D0D-6B8B2EDD3A0C}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">8</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMSUBA</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{E44F2454-F7FF-4572-A170-EEAE9775D586}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">4</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMWCMP</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{9B779EE6-3198-4F20-84F2-105D7604C2DA}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">1</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMCCT</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C4A6E1EF-128E-459F-8C16-A15457BA2CE7}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">2</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMERC</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{8B859EE5-B776-47F5-A679-1736A941272D}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">1</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMHTC</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{F0EB92BA-89A6-4087-8283-42209EC2801E}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">1</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMQLDA</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{8C4DCE55-1EF4-4505-A4DE-D24A64C84D8D}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">1</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMCCC</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{33BEEA81-AC9F-467D-80B9-B64299E2BCEC}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">1</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMFMOD</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{0E152D9B-409A-47EE-84F5-5962F4802FBA}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">10</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMUSER</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{453C2E1A-18D9-4C5E-BB1B-5D41CE5A9488}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">10</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMPID</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{5C176B03-5086-47A5-A5AD-B56218A68A47}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">10</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMJOBN</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{36AF6176-5469-461B-AB38-4CC393E0FBDC}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x000D__x000A_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">6</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GMUPMJ</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{E7620B5C-ECE0-44F2-B423-70A1F4367EB4}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ConnectionString">\Data\ - F0901 - .csv</DTS:Property></DTS:ConnectionManager></DTS:ObjectData></DTS:ConnectionManager>
+<DTS:ConnectionManager>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">JDEPROD.infprod</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{FCE1F2C6-70A4-472D-BBB6-ACCD32AFF3D2}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">OLEDB</DTS:Property><DTS:ObjectData><DTS:ConnectionManager>
+<DTS:Property DTS:Name="Retain">0</DTS:Property><DTS:Password DTS:Name="Password" Sensitive="1" Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcbBsiOOwmkm7136nZJuE+gAAAAAIAAAARABUAFMAAAADZgAAqAAAABAAAACYwr407qnJJG6WFMyK2pepAAAAAASAAACgAAAAEAAAAP86VdB4d7QK+cJU147QSDUYAAAASlBKEWaT3QIyJdlClzF+qVMw5jFrg2rKFAAAAGWmmxkICJBNj8KlAxO+AZFqTu+C</DTS:Password>
+<DTS:Property DTS:Name="ConnectionString">Data Source=JDEPROD;User ID=infprod;Provider=MSDAORA.1;Persist Security Info=True;</DTS:Property></DTS:ConnectionManager></DTS:ObjectData></DTS:ConnectionManager>
+<DTS:ConnectionManager>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">JDEPROD.mfraser</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{73CEFC5B-7A61-409B-9D20-882D00BBEACA}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">OLEDB</DTS:Property><DTS:ObjectData><DTS:ConnectionManager>
+<DTS:Property DTS:Name="Retain">0</DTS:Property>
+<DTS:Property DTS:Name="ConnectionString">Data Source=JDEPROD;User ID=mfraser;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;</DTS:Property></DTS:ConnectionManager></DTS:ObjectData></DTS:ConnectionManager>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">0</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">CurrentCompany</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable">\Package.Variables[User::Company].Properties[Value]</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">Company</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{BF48609E-06E8-4020-B35D-A577D3CEF937}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">0</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">CurrentCompanySetName</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable">\Package.Variables[User::CurrentCompanySetName].Properties[Value]</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">Current Company Set</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{45C37EF5-403F-407C-8B90-B4EED619157C}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">0</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">FilePathRoot</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable">\Package.Variables[User::FilePath].Properties[Value]</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">File Path Root</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{5E58D81A-54C4-410B-AF96-4E05BCF25C3D}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Property DTS:Name="LastModifiedProductVersion">10.0.1600.22</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">1033</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">2345</DTS:Property><DTS:VariableValue DTS:DataType="8"></DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">Company</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{10935A2B-587A-4652-B935-704E239DAB37}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">2345</DTS:Property><DTS:VariableValue DTS:DataType="8"></DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">CurrentCompanySetName</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{766AEDFA-A09A-4F3A-B4C3-33F6AA2E4D5E}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">2345</DTS:Property><DTS:VariableValue DTS:DataType="8"></DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">FilePath</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{AD0A04E7-CCC5-46A6-A38A-185C68A93B9F}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">2345</DTS:Property><DTS:VariableValue DTS:DataType="8">select * from proddta.f0901 where gmco = '00274'</DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">SQL</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{100DF764-3A35-4E76-86CB-3652E7576F86}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask, Microsoft.SqlServer.ScriptTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" DTS:ThreadHint="0">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact"></DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Create SQL Query</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{dd81bc03-97f8-4944-99b4-2ffff254a51c}</DTS:Property>
+<DTS:Property DTS:Name="Description">Script Task</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask, Microsoft.SqlServer.ScriptTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><ScriptProject Name="ST_c7eb12a3336b46a18be44f29bfa76d4e" VSTAMajorVersion="2" VSTAMinorVersion="1" Language="VisualBasic" EntryPoint="Main" ReadOnlyVariables="User::Company" ReadWriteVariables="User::SQL"><ProjectItem Name="\st_c7eb12a3336b46a18be44f29bfa76d4e.vbproj">
+<![CDATA[<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><!-- This section defines project-level properties.
+
+       Configuration - Specifies whether the default configuration is Release or Debug.
+       Platform - Specifies what CPU the output of this project can run on.
+       OutputType - Must be "Library" for VSTA.
+       NoStandardLibraries - Set to "false" for VSTA.
+       RootNamespace - In C#, this specifies the namespace given to new files.
+                       In Visual Basic, all objects are wrapped in this namespace at runtime.
+       AssemblyName - Name of the output assembly.
+  --><PropertyGroup><ProjectTypeGuids>{A860303F-1F3F-4691-B57E-529FC101A107};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><OutputType>Library</OutputType><RootNamespace>ST_ab2dcde452b343d399e23a2a76473a70.vbproj</RootNamespace><AssemblyName>st_c7eb12a3336b46a18be44f29bfa76d4e</AssemblyName><StartupObject></StartupObject><OptionExplicit>On</OptionExplicit><OptionCompare>Binary</OptionCompare><OptionStrict>Off</OptionStrict><OptionInfer>On</OptionInfer><ProjectGuid>{85556F71-5899-4022-BB72-F252B6E7D862}</ProjectGuid></PropertyGroup><!-- This section defines properties that are set when the "Debug" configuration is
+       selected.
+
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of the project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  --><PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DefineConstants></DefineConstants><DefineDebug>true</DefineDebug><DefineTrace>true</DefineTrace><DebugSymbols>true</DebugSymbols><Optimize>false</Optimize><OutputPath>bin\</OutputPath><RegisterForComInterop>false</RegisterForComInterop><RemoveIntegerChecks>false</RemoveIntegerChecks><NoWarn>42016,42017,42018,42019,42032</NoWarn></PropertyGroup><!-- This section defines properties that are set when the "Release" configuration is
+       selected.
+
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of the project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  --><PropertyGroup Condition=" '$(Configuration)' == 'Release' "><DefineConstants></DefineConstants><DefineDebug>false</DefineDebug><DefineTrace>true</DefineTrace><DebugSymbols>false</DebugSymbols><Optimize>true</Optimize><OutputPath>bin\</OutputPath><RegisterForComInterop>false</RegisterForComInterop><RemoveIntegerChecks>false</RemoveIntegerChecks><NoWarn>42016,42017,42018,42019,42032</NoWarn></PropertyGroup><!-- This section enables pre- and post-build steps. However,
+       it is recommended that MSBuild tasks be used instead of these properties.
+  --><PropertyGroup><PreBuildEvent></PreBuildEvent><PostBuildEvent></PostBuildEvent></PropertyGroup><!-- This sections specifies references for the project. --><ItemGroup><Reference Include="System" /><Reference Include="System.AddIn, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" /><Reference Include="System.Data" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /><Reference Include="Microsoft.SqlServer.ManagedDTS, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.ScriptTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /></ItemGroup><!-- Visual Basic supports Importing namespaces (equivalent to using statements in C#).--><ItemGroup><Import Include="Microsoft.VisualBasic" /><Import Include="System" /><Import Include="System.Collections" /><Import Include="System.Data" /><Import Include="System.Diagnostics" /><Import Include="System.Windows.Forms" /></ItemGroup><!-- This section defines the user source files that are part of the
+       project.
+
+       Compile - Specifies a source file to compile.
+       EmbeddedResource - Specifies a .resx file for embedded resources.
+       None - Specifies a file that is not to be passed to the compiler (for instance,
+              a text file or XML file).
+       AppDesigner - Specifies the directory where the application properties files can
+                     be found.
+  --><ItemGroup><AppDesigner Include="My Project\" /><Compile Include="My Project\AssemblyInfo.vb"><SubType>Code</SubType></Compile><EmbeddedResource Include="My Project\Resources.resx"><Generator>VbMyResourcesResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.vb</LastGenOutput><CustomToolNamespace>My.Resources</CustomToolNamespace></EmbeddedResource><Compile Include="My Project\Resources.Designer.vb"><AutoGen>True</AutoGen><DesignTime>True</DesignTime><DependentUpon>Resources.resx</DependentUpon><SubType>Code</SubType></Compile><None Include="My Project\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.vb</LastGenOutput></None><Compile Include="My Project\Settings.Designer.vb"><AutoGen>True</AutoGen><DependentUpon>Settings.settings</DependentUpon><SubType>Code</SubType></Compile><Compile Include="ScriptMain.vb"><SubType>Code</SubType></Compile><!-- Include the default configuration information and metadata files for the add-in.
+         These files are copied to the build output directory when the project is
+         built, and the path to the configuration file is passed to add-in on the command
+         line when debugging.
+    --></ItemGroup><!-- Include the build rules for a VB project.--><Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" /><!-- This section defines VSTA properties that describe the host-changable project properties. --><ProjectExtensions><VisualStudio><FlavorProperties GUID="{A860303F-1F3F-4691-B57E-529FC101A107}"><ProjectProperties HostName="VSTAHostName" HostPackage="{C1B21C64-9E6F-4923-A89D-9F958503C1CE}" ApplicationType="usd" Language="vb" TemplatesPath="" DebugInfoExeName="#HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\InstallDir#\devenv.exe" /><Host Name="SSIS_ScriptTask" /><ProjectClient><HostIdentifier>SSIS_ScriptTask</HostIdentifier></ProjectClient></FlavorProperties></VisualStudio></ProjectExtensions></Project>]]></ProjectItem><ProjectItem Name="\my project\settings.settings">
+<![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)" GeneratedClassNamespace="$safeprojectname" GeneratedClassName="MySettings">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem><ProjectItem Name="\my project\resources.designer.vb">
+<![CDATA['------------------------------------------------------------------------------
+' <autogenerated>
+'     This code was generated by a tool.
+'
+'     Changes to this file may cause incorrect behavior and will be lost if
+'     the code is regenerated.
+' </autogenerated>
+'------------------------------------------------------------------------------
+
+Option Strict Off
+Option Explicit On
+
+
+Namespace My.Resources
+    
+    '''<summary>
+    '''   A strongly-typed resource class, for looking up localized strings, etc.
+    '''</summary>
+    'This class was auto-generated by the Strongly Typed Resource Builder
+    'class via a tool like ResGen or Visual Studio.NET.
+    'To add or remove a member, edit your .ResX file then rerun ResGen
+    'with the /str option, or rebuild your VS project.
+    Class MyResources
+        
+        Private Shared _resMgr As System.Resources.ResourceManager
+        
+        Private Shared _resCulture As System.Globalization.CultureInfo
+        
+        Friend Sub New()
+            MyBase.New
+        End Sub
+        
+        '''<summary>
+        '''   Returns the cached ResourceManager instance used by this class.
+        '''</summary>
+        <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        Public Shared ReadOnly Property ResourceManager() As System.Resources.ResourceManager
+            Get
+                If (_resMgr Is Nothing) Then
+                    Dim temp As System.Resources.ResourceManager = New System.Resources.ResourceManager("My.Resources.MyResources", GetType(MyResources).Assembly)
+                    _resMgr = temp
+                End If
+                Return _resMgr
+            End Get
+        End Property
+        
+        '''<summary>
+        '''   Overrides the current thread's CurrentUICulture property for all
+        '''   resource lookups using this strongly typed resource class.
+        '''</summary>
+        <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        Public Shared Property Culture() As System.Globalization.CultureInfo
+            Get
+                Return _resCulture
+            End Get
+            Set
+                _resCulture = value
+            End Set
+        End Property
+    End Class
+End Namespace]]></ProjectItem><ProjectItem Name="\scriptmain.vb">
+<![CDATA[' Microsoft SQL Server Integration Services Script Task
+' Write scripts using Microsoft Visual Basic 2008.
+' The ScriptMain is the entry point class of the script.
+
+Imports System
+Imports System.Data
+Imports System.Math
+Imports Microsoft.SqlServer.Dts.Runtime
+
+<System.AddIn.AddIn("ScriptMain", Version:="1.0", Publisher:="", Description:="")> _
+<System.CLSCompliantAttribute(False)> _
+Partial Public Class ScriptMain
+	Inherits Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+
+	Enum ScriptResults
+		Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success
+		Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+	End Enum
+	
+
+	' The execution engine calls this method when the task executes.
+	' To access the object model, use the Dts property. Connections, variables, events,
+	' and logging features are available as members of the Dts property as shown in the following examples.
+	'
+	' To reference a variable, call Dts.Variables("MyCaseSensitiveVariableName").Value
+	' To post a log entry, call Dts.Log("This is my log text", 999, Nothing)
+	' To fire an event, call Dts.Events.FireInformation(99, "test", "hit the help message", "", 0, True)
+	'
+	' To use the connections collection use something like the following:
+	' ConnectionManager cm = Dts.Connections.Add("OLEDB")
+	' cm.ConnectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;Provider=SQLNCLI10;Integrated Security=SSPI;Auto Translate=False;"
+	'
+	' Before returning from this method, set the value of Dts.TaskResult to indicate success or failure.
+	' 
+	' To open Help, press F1.
+
+	Public Sub Main()
+		'
+		' Add your code here
+        '
+        Dim PaddedCO As String
+
+        PaddedCO = Right("00000" & Dts.Variables.Item("Company").Value, 5)
+
+        Dts.Variables.Item("SQL").Value = "select * from proddta.f0901 where gmco = '" & PaddedCO & "'"
+        'MsgBox(Dts.Variables.Item("SQL").Value)
+
+		Dts.TaskResult = ScriptResults.Success
+	End Sub
+
+End Class]]></ProjectItem><ProjectItem Name="\my project\resources.resx">
+<![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem><ProjectItem Name="\my project\settings.designer.vb">
+<![CDATA['------------------------------------------------------------------------------
+' <autogenerated>
+'     This code was generated by a tool.
+'
+'     Changes to this file may cause incorrect behavior and will be lost if
+'     the code is regenerated.
+' </autogenerated>
+'------------------------------------------------------------------------------
+
+Option Strict Off
+Option Explicit On
+
+
+
+Partial Friend NotInheritable Class MySettings
+    Inherits System.Configuration.ApplicationSettingsBase
+
+    Private Shared m_Value As MySettings
+
+    Private Shared m_SyncObject As Object = New Object
+
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Public Shared ReadOnly Property Value() As MySettings
+        Get
+            If (MySettings.m_Value Is Nothing) Then
+                System.Threading.Monitor.Enter(MySettings.m_SyncObject)
+                If (MySettings.m_Value Is Nothing) Then
+                    Try
+                        MySettings.m_Value = New MySettings
+                    Finally
+                        System.Threading.Monitor.Exit(MySettings.m_SyncObject)
+                    End Try
+                End If
+            End If
+            Return MySettings.m_Value
+        End Get
+    End Property
+End Class]]></ProjectItem><ProjectItem Name="\my project\assemblyinfo.vb">
+<![CDATA[Imports System
+Imports System.Reflection
+Imports System.Runtime.InteropServices
+
+' General Information about an assembly is controlled through the following 
+' set of attributes. Change these attribute values to modify the information
+' associated with an assembly.
+
+' Review the values of the assembly attributes
+
+<Assembly: AssemblyTitle("ST_ab2dcde452b343d399e23a2a76473a70.vbproj")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("Intrawest")> 
+<Assembly: AssemblyProduct("ST_ab2dcde452b343d399e23a2a76473a70.vbproj")> 
+<Assembly: AssemblyCopyright("Copyright @ Intrawest 2009")> 
+<Assembly: AssemblyTrademark("")> 
+<Assembly: CLSCompliant(True)> 
+
+<Assembly: ComVisible(False)> 
+
+'The following GUID is for the ID of the typelib if this project is exposed to COM
+<Assembly: Guid("dc1252cc-8018-4f82-8bd3-0d43835e52e5")> 
+
+' Version information for an assembly consists of the following four values:
+'
+'      Major Version
+'      Minor Version 
+'      Build Number
+'      Revision
+'
+' You can specify all the values or you can default the Build and Revision Numbers 
+' by using the '*' as shown below:
+' <Assembly: AssemblyVersion("1.0.*")>
+
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> ]]></ProjectItem><BinaryItem Name="\bin\st_c7eb12a3336b46a18be44f29bfa76d4e.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDACqZMksAAAAAAAAAAOAAAiELAQgAABwAAAAMAAAAAAAAbjoA
+AAAgAAAAQAAAAABAAAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAIAQIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAACA6AABLAAAAAEAAADgJAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAdBoAAAAgAAAAHAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAADgJAAAAQAAAAAoAAAAeAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAKAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAABQ
+OgAAAAAAAEgAAAACAAUA3CMAAEQWAAABAAAAAAAAAFAgAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAALQAAADOyu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5S
+ZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFs
+LCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGlt
+ZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAAAeAigBAAAKKh4CKAQAAAoqpnMGAAAK
+gAEAAARzBwAACoACAAAEcwgAAAqAAwAABHMJAAAKgAQAAAQqAAATMAEACwAAAAEAABF+AQAABG8K
+AAAKKgATMAEACwAAAAIAABF+AgAABG8LAAAKKgATMAEACwAAAAMAABF+AwAABG8MAAAKKgATMAEA
+CwAAAAQAABF+BAAABG8NAAAKKgATMAIADQAAAAUAABECAygRAAAKKBIAAAoqAAAAEzABAAcAAAAG
+AAARAigTAAAKKgATMAEACwAAAAcAABHQBQAAAigUAAAKKgATMAEABwAAAAgAABECKBUAAAoqABMw
+AQAQAAAACQAAEQKMAQAAGy0GKAEAACsqAioTMAIAEAAAAAoAABEDEgD+FQIAABsGgQIAABsqHgIo
+FwAACioTMAIAKAAAAAsAABECexkAAApvGgAACgsHjAMAABstEigCAAArCwJ7GQAACgdvGwAACgcq
+SgIoFwAACgJzHAAACn0ZAAAKKgAeAigXAAAKKhMwAgAtAAAADAAAEX4GAAAELSByAQAAcNAHAAAC
+KBQAAApvHgAACnMfAAAKCweABgAABH4GAAAEKgAAABMwAQAGAAAADQAAEX4HAAAEKgAAHgKABwAA
+BCpCcxcAAAooEQAACoAJAAAEKgAAAB4CKCAAAAoqGzABAD8AAAAOAAARfggAAAQtMn4JAAAEKBEA
+AAooIQAACn4IAAAELRxzFgAABoAIAAAE3hB+CQAABCgRAAAKKCIAAArcfggAAAQqAAEMAAACAB0A
+DCkAEAAAAAEeAigkAAAKKhMwBABnAAAADwAAEXIzAABwAm8lAAAKbyYAAApyPwAAcG8nAAAKbygA
+AAooKQAACigqAAAKGygrAAAKCgJvJQAACm8mAAAKck8AAHBvJwAACnJXAABwBnKtAABwKCwAAApv
+LQAACgJvJQAAChZvLgAACioAQlNKQgEAAQAAAAAADAAAAHYyLjAuNTA3MjcAAAAABQBsAAAA4AcA
+ACN+AABMCAAAgAkAACNTdHJpbmdzAAAAAMwRAAC0AAAAI1VTAIASAAAQAAAAI0dVSUQAAACQEgAA
+tAMAACNCbG9iAAAAAAAAAAIAAAFXHaIJCQ8AAAD6ATMAFgAAAQAAAC0AAAAKAAAADAAAABkAAAAE
+AAAAOgAAAAIAAAA1AAAADwAAAAQAAAAIAAAACQAAAAkAAAABAAAABgAAAAEAAAADAAAAAwAAAAIA
+AAAAAFYJAQAAAAAACgBgATYBCgCUAXYBBgCkAZ0BCgD8ATYBBgB6Ap0BCgD8AtICBgAyAyEDBgBf
+A0oDDgDGA7EDEgBFBBwEBgBmBJ0BDgCZBIMEDgCyBIMEDgDfBMcEBgAJBfYECgBIBSEFCgBgBRMA
+DgCVBXgFBgDKBaoFBgDoBZ0BBgAMBp0BCgAlBhMABgBpBkoGBgCPBn0GBgC2BqUGBgDJBvYEEgDm
+BhwEFgA/Bx8HFgBXBx8HCgBpByEFCgCFByEFCgCRBxMABgCfB50BBgC8B50BGgDfB9IHBgAtCKoF
+BgBNCKoFBgBrCH0GBgCICEoGBgCWCH0GBgCxCH0GBgDMCH0GBgDlCH0GBgD+CH0GBgAbCX0GAAAA
+AAEAAAAAAAEAAQAAAAAAKQA3AAUAAQABAAAAAABlADcACQABAAIAAAEQAHAANwANAAEAAwAFAQAA
+egAAAA0ABQAIAAUBAACIAAAADQAFAA8AAAAAAKMArwANAAYAEQAAARAA5wDyACUACAAVAAEAAAAd
+AfIAKQAKABgAAgEAACgBAAAtAAoAGgAxAL8BIAAxAOgBLQAxAAoCOgAxAC8CRwAhAAsDkAARAEID
+nQARAGsDoQARAN4DvwARAOYDwwAGBmsE2QBWgHME3ABWgHsE3AAIIQAAAAAGGHABEwABABAhAAAA
+AAYYcAETAAEAGCEAAAAAERirARcAAQBEIQAAAAATCLIBGwABAFwhAAAAABMI2AEoAAEAdCEAAAAA
+EwgBAjUAAQCMIQAAAAATCB8CQgABAKQhAAAAAEYCZQJjAAEAwCEAAAAARgJuAmgAAgDUIQAAAACD
+AH8CbAACAOwhAAAAAEYChwJxAAIAACIAAAAAEQCQAngAAgAcIgAAAAABAK4CgAADADgiAAAAAAYY
+cAETAAQAQCIAAAAAAwjCAosABAB0IgAAAAAGGHABEwAEAIgiAAAAAAMYcAETAAQAkCIAAAAAFgh3
+A6UABADMIgAAAAAWCIsDqgAEAOAiAAAAABYIlwOvAAQA6CIAAAAAERirARcABQD8IgAAAAAGGHAB
+EwAFAAQjAAAAABYI8wPGAAUAYCMAAAAABhhwARMABQBoIwAAAAAGAGEEEwAFAAAAAQBsAgAAAQCl
+AgAAAQClAgAAAQCjAwkAcAETAGEAcAHqAHEAcAH5ABEAcAETAHkAcAETACQAcAETACwAcAETADQA
+cAETADwAcAETACQAwgKLACwAwgKLADQAwgKLADwAwgKLAIEAcAETAIkAcAETAJEAcAFHAZkA2QWS
+ARkAZQJjABkAbgJoACkA+gWfARkAhwJxAKkAFgavARkAcAETALEAcAG/AUQACwOQAEwA8wOLAEwA
+QAY8AkwAcAETALkAcAFJAikAmAZUAjkAcAFZAkkAcAETAMkAvgZ1AskAxAZ1AtEAcAETAFEAcAET
+AFEA+AZ/AtkASQeEAuEAYAeJAukA8wOPAvEAcweTAvkAhwKZAgEBmQeeAgkBpgekAukAQAarAtkA
+rQewAhEBcAFJAhkBcAFHASEBcAGwAikBcAETADEBcAFHATkBcAFHAUEBcAFHAUkBcAFHAVEBcAFH
+AVkBcAFHAWEBcAFHAWkBcAFHAQgALADgAAgAMADlACkAgwBMAS4AqwFOAi4AuwF0Ay4AewFOAy4A
+ywFOAi4A0wF0Ay4A6wBOAi4AswFUAy4AwwGkAy4AiwHvAi4AkwH4Ai4AmwEXAy4AowEkA0AAKwDl
+AEAAEwDwAEMAGwD/AEMAEwDwAEkAgwBqAWMAGwD/AGMAEwDwAGkAgwBdAYAAKwDlAIMAcwDlAIMA
+GwD/AIMAewDlAIkAgwB+AaAAKwDlAKMAEwDwAKMAwwDHAcAAKwDlAMMAEwDwAMMA6wBOAskAEwBs
+AuAAKwDlAOkAEwBsAgABKwDlAAABEwDwAAkBGwHlACABEwDwACABKwDlACMBewFOAiMBgwG1AkAB
+EwDwAEABKwDlAGABKwDlAGABEwDwAIABKwDlAKABKwDlAMABEwDwAMABKwDlAOABKwDlAAACEwDw
+AAACKwDlADMBOAE9AUIBlwGbAaYBqwG6AboBQgJgAmcCegKrAQQAAQAGAAUABwAGAAgACAAAAJQB
+TwAAAE0CVAAAAPwBWQAAAFkCXgAAABUDmAAAADIDtQAAAKkDugAAAKMDywACAAQAAwACAAUABQAC
+AAYABwACAAcACQACAA8ACwACABIADQACABMADwABABQADwACABcAEQB1AHUAiAAXAR4BJQEsASkC
+MAIEgAAAAQAAAAAAAAAAAAAAAAAyCQAAAgAAAAAAAAAAAAAAAQAKAAAAAAAIAAAAAAAAAAAAAAAK
+ABMAAAAAAAIAAAAAAAAAAAAAAAEAnQEAAAAACgAAAAAAAAAAAAAA0AD9AwAAAAAKAAAAAAAAAAAA
+AADQAAAHAAAAAAMABQAAAAAAAAAAAAEA0gcAAAAAAAAAAAEAAADuBwAABQAEAAYABAAKAAkAAAAQ
+AAwAowIAABAAGQCjAgAAAAAbAKMCLQC1AS0ANwIAAAAAADxNb2R1bGU+AG1zY29ybGliAE1pY3Jv
+c29mdC5WaXN1YWxCYXNpYwBNeUFwcGxpY2F0aW9uAFNUX2FiMmRjZGU0NTJiMzQzZDM5OWUyM2Ey
+YTc2NDczYTcwLnZicHJvai5NeQBNeUNvbXB1dGVyAE15UHJvamVjdABNeVdlYlNlcnZpY2VzAFRo
+cmVhZFNhZmVPYmplY3RQcm92aWRlcmAxAE15UmVzb3VyY2VzAFNUX2FiMmRjZGU0NTJiMzQzZDM5
+OWUyM2EyYTc2NDczYTcwLnZicHJvai5NeS5SZXNvdXJjZXMATXlTZXR0aW5ncwBTVF9hYjJkY2Rl
+NDUyYjM0M2QzOTllMjNhMmE3NjQ3M2E3MC52YnByb2oAU2NyaXB0TWFpbgBTY3JpcHRSZXN1bHRz
+AE1pY3Jvc29mdC5WaXN1YWxCYXNpYy5BcHBsaWNhdGlvblNlcnZpY2VzAEFwcGxpY2F0aW9uQmFz
+ZQAuY3RvcgBNaWNyb3NvZnQuVmlzdWFsQmFzaWMuRGV2aWNlcwBDb21wdXRlcgBTeXN0ZW0AT2Jq
+ZWN0AC5jY3RvcgBnZXRfQ29tcHV0ZXIAbV9Db21wdXRlck9iamVjdFByb3ZpZGVyAGdldF9BcHBs
+aWNhdGlvbgBtX0FwcE9iamVjdFByb3ZpZGVyAFVzZXIAZ2V0X1VzZXIAbV9Vc2VyT2JqZWN0UHJv
+dmlkZXIAZ2V0X1dlYlNlcnZpY2VzAG1fTXlXZWJTZXJ2aWNlc09iamVjdFByb3ZpZGVyAEFwcGxp
+Y2F0aW9uAFdlYlNlcnZpY2VzAEVxdWFscwBvAEdldEhhc2hDb2RlAFR5cGUAR2V0VHlwZQBUb1N0
+cmluZwBDcmVhdGVfX0luc3RhbmNlX18AVABpbnN0YW5jZQBEaXNwb3NlX19JbnN0YW5jZV9fAGdl
+dF9HZXRJbnN0YW5jZQBNaWNyb3NvZnQuVmlzdWFsQmFzaWMuTXlTZXJ2aWNlcy5JbnRlcm5hbABD
+b250ZXh0VmFsdWVgMQBtX0NvbnRleHQAR2V0SW5zdGFuY2UAU3lzdGVtLlJlc291cmNlcwBSZXNv
+dXJjZU1hbmFnZXIAX3Jlc01ncgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBDdWx0dXJlSW5mbwBfcmVz
+Q3VsdHVyZQBnZXRfUmVzb3VyY2VNYW5hZ2VyAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAFZhbHVl
+AEN1bHR1cmUAU3lzdGVtLkNvbmZpZ3VyYXRpb24AQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UAbV9W
+YWx1ZQBtX1N5bmNPYmplY3QAZ2V0X1ZhbHVlAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuU2NyaXB0VGFz
+awBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5UYXNrcy5TY3JpcHRUYXNrAFZTVEFSVFNjcmlwdE9i
+amVjdE1vZGVsQmFzZQBNYWluAEVudW0AdmFsdWVfXwBTdWNjZXNzAEZhaWx1cmUAU3lzdGVtLkNv
+bXBvbmVudE1vZGVsAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVTdGF0
+ZQBTeXN0ZW0uQ29kZURvbS5Db21waWxlcgBHZW5lcmF0ZWRDb2RlQXR0cmlidXRlAFN5c3RlbS5E
+aWFnbm9zdGljcwBEZWJ1Z2dlckhpZGRlbkF0dHJpYnV0ZQBNaWNyb3NvZnQuVmlzdWFsQmFzaWMu
+Q29tcGlsZXJTZXJ2aWNlcwBTdGFuZGFyZE1vZHVsZUF0dHJpYnV0ZQBIaWRlTW9kdWxlTmFtZUF0
+dHJpYnV0ZQBTeXN0ZW0uQ29tcG9uZW50TW9kZWwuRGVzaWduAEhlbHBLZXl3b3JkQXR0cmlidXRl
+AFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAUnVudGltZUhlbHBlcnMAR2V0T2JqZWN0
+VmFsdWUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUAQWN0aXZhdG9yAENyZWF0
+ZUluc3RhbmNlAE15R3JvdXBDb2xsZWN0aW9uQXR0cmlidXRlAHNldF9WYWx1ZQBTeXN0ZW0uUnVu
+dGltZS5JbnRlcm9wU2VydmljZXMAQ29tVmlzaWJsZUF0dHJpYnV0ZQBTeXN0ZW0uUmVmbGVjdGlv
+bgBBc3NlbWJseQBnZXRfQXNzZW1ibHkAU3lzdGVtLlRocmVhZGluZwBNb25pdG9yAEVudGVyAEV4
+aXQARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBTY3JpcHRPYmplY3RNb2RlbABnZXRfRHRz
+AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuTWFuYWdlZERUUwBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5S
+dW50aW1lAFZhcmlhYmxlcwBnZXRfVmFyaWFibGVzAFZhcmlhYmxlAGdldF9JdGVtAE9wZXJhdG9y
+cwBDb25jYXRlbmF0ZU9iamVjdABDb252ZXJzaW9ucwBTdHJpbmdzAFJpZ2h0AFN0cmluZwBDb25j
+YXQAc2V0X1Rhc2tSZXN1bHQAQ0xTQ29tcGxpYW50QXR0cmlidXRlAFN5c3RlbS5BZGRJbgBBZGRJ
+bkF0dHJpYnV0ZQBTVF9hYjJkY2RlNDUyYjM0M2QzOTllMjNhMmE3NjQ3M2E3MC52YnByb2ouUmVz
+b3VyY2VzLnJlc291cmNlcwBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAFJ1bnRpbWVD
+b21wYXRpYmlsaXR5QXR0cmlidXRlAEFzc2VtYmx5RmlsZVZlcnNpb25BdHRyaWJ1dGUAR3VpZEF0
+dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJp
+YnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAEFz
+c2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBzdF9jN2Vi
+MTJhMzMzNmI0NmExOGJlNDRmMjliZmE3NmQ0ZQBzdF9jN2ViMTJhMzMzNmI0NmExOGJlNDRmMjli
+ZmE3NmQ0ZS5kbGwAAAAAMU0AeQAuAFIAZQBzAG8AdQByAGMAZQBzAC4ATQB5AFIAZQBzAG8AdQBy
+AGMAZQBzAAALMAAwADAAMAAwAAAPQwBvAG0AcABhAG4AeQAAB1MAUQBMAABVcwBlAGwAZQBjAHQA
+IAAqACAAZgByAG8AbQAgAHAAcgBvAGQAZAB0AGEALgBmADAAOQAwADEAIAB3AGgAZQByAGUAIABn
+AG0AYwBvACAAPQAgACcAAQMnAAEAAABpB/nx7ofVS7GIKb0enyPMAAi3elxWGTTgiQiwP19/EdUK
+OgMgAAEDAAABBAAAEgwHBhUSGAESDAQAABIIBwYVEhgBEggEAAASEQcGFRIYARIRBAAAEhQHBhUS
+GAESFAQIABIMBAgAEggECAASEQQIABIUBCABAhwDIAAIBCAAEhUDIAAOAh4ABxABAR4AHgAHMAEB
+ARAeAAITAAQgABMABwYVEhkBEwAEKAATAAMGEh0DBhIhBAAAEh0EAAASIQUAAQESIQQIABIdBAgA
+EiEDBhIgAgYcBAAAEiAECAASIAiJhF3NgIDMkQIGCAMGESgEAAAAAAQBAAAABSABARE1CAEAAQAA
+AAAABSACAQ4OFwEACk15VGVtcGxhdGUHOC4wLjAuMAAABhUSGAESDAYVEhgBEggGFRIYARIRBhUS
+GAESFAQHARIMBAcBEggEBwESEQQHARIUBCABAQ4QAQALTXkuQ29tcHV0ZXIAAAwBAAdNeS5Vc2Vy
+AAATAQAOTXkuQXBwbGljYXRpb24AABMBAA5NeS5XZWJTZXJ2aWNlcwAABAABHBwDBwECAwcBCAYA
+ARIVEVEEBwESFQMHAQ4FEAEAHgAECgEeAAQHAR4AByAEAQ4ODg5hAQA0U3lzdGVtLldlYi5TZXJ2
+aWNlcy5Qcm90b2NvbHMuU29hcEh0dHBDbGllbnRQcm90b2NvbBJDcmVhdGVfX0luc3RhbmNlX18T
+RGlzcG9zZV9fSW5zdGFuY2VfXwAAAAYVEhgBEwAGFRIZARMABAoBEwAFIAEBEwAGBwITABMABCAB
+AQIFAQAAAAAEIAASYQYgAgEOEmEGBwISHRIdBAcBEiEIAQACAAAAAAAEAAEBHAQHARIgBCAAEm0E
+IAAScQUgARJ1HAMgABwFAAIcHBwEAAEOHAUAAg4OCAYAAw4ODg4EIAEBHAQgAQEIOQEAClNjcmlw
+dE1haW4DAFQOB1ZlcnNpb24DMS4wVA4JUHVibGlzaGVyAFQOC0Rlc2NyaXB0aW9uAAgBAAgAAAAA
+AB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEMAQAHMS4wLjAuMAAAKQEAJGRjMTI1MmNj
+LTgwMTgtNGY4Mi04YmQzLTBkNDM4MzVlNTJlNQAABQEAAQAAHwEAGkNvcHlyaWdodCBAIEludHJh
+d2VzdCAyMDA5AAAvAQAqU1RfYWIyZGNkZTQ1MmIzNDNkMzk5ZTIzYTJhNzY0NzNhNzAudmJwcm9q
+AAAOAQAJSW50cmF3ZXN0AAAASDoAAAAAAAAAAAAAXjoAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AFA6AAAAAAAAAABfQ29yRGxsTWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIEAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD
+AAMAAAAoAACADgAAAEgAAIAQAAAAYAAAgAAAAAAAAAAAAAAAAAAAAgACAAAAeAAAgAMAAACQAACA
+AAAAAAAAAAAAAAAAAAABAAB/AACoAACAAAAAAAAAAAAAAAAAAAABAAEAAADAAACAAAAAAAAAAAAA
+AAAAAAABAAAAAADYAAAAAAAAAAAAAAAAAAAAAAABAAAAAADoAAAAAAAAAAAAAAAAAAAAAAABAAAA
+AAD4AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAIAQAAAEUAAOgCAAAAAAAAAAAAAOhHAAAoAQAAAAAA
+AAAAAAAQSQAAIgAAAAAAAAAAAAAAGEEAAOgDAAAAAAAAAAAAAOgDNAAAAFYAUwBfAFYARQBSAFMA
+SQBPAE4AXwBJAE4ARgBPAAAAAAC9BO/+AAABAAAAAQAAAAAAAAABAAAAAAA/AAAAAAAAAAQAAAAC
+AAAAAAAAAAAAAAAAAAAARAAAAAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIA
+YQBuAHMAbABhAHQAaQBvAG4AAAAAAAAAsARIAwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBm
+AG8AAAAkAwAAAQAwADAAMAAwADAANABiADAAAAA0AAoAAQBDAG8AbQBwAGEAbgB5AE4AYQBtAGUA
+AAAAAEkAbgB0AHIAYQB3AGUAcwB0AAAAgAArAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBv
+AG4AAAAAAFMAVABfAGEAYgAyAGQAYwBkAGUANAA1ADIAYgAzADQAMwBkADMAOQA5AGUAMgAzAGEA
+MgBhADcANgA0ADcAMwBhADcAMAAuAHYAYgBwAHIAbwBqAAAAAAAwAAgAAQBGAGkAbABlAFYAZQBy
+AHMAaQBvAG4AAAAAADEALgAwAC4AMAAuADAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0A
+ZQAAAHMAdABfAGMANwBlAGIAMQAyAGEAMwAzADMANgBiADQANgBhADEAOABiAGUANAA0AGYAMgA5
+AGIAZgBhADcANgBkADQAZQAuAGQAbABsAAAAXAAbAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcA
+aAB0AAAAQwBvAHAAeQByAGkAZwBoAHQAIABAACAASQBuAHQAcgBhAHcAZQBzAHQAIAAyADAAMAA5
+AAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAcwB0AF8AYwA3AGUA
+YgAxADIAYQAzADMAMwA2AGIANAA2AGEAMQA4AGIAZQA0ADQAZgAyADkAYgBmAGEANwA2AGQANABl
+AC4AZABsAGwAAAB4ACsAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAVABfAGEAYgAyAGQA
+YwBkAGUANAA1ADIAYgAzADQAMwBkADMAOQA5AGUAMgAzAGEAMgBhADcANgA0ADcAMwBhADcAMAAu
+AHYAYgBwAHIAbwBqAAAAAAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4A
+MAAuADAALgAwAAAAOAAIAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAw
+AC4AMAAuADAAAAAoAAAAIAAAAEAAAAABAAQAAAAAAIACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+gAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAd3d3d3d3d3d3d3d3d3dwBEREREREREREREREREREcAT/////////////////9HAE
+//////////////////RwBP/////////////////0cAT/////////////////9HAE////////////
+//////RwBP/////////////////0cAT/////////////////9HAE//////////////////RwBP//
+///////////////0cAT/////////////////9HAE//////////////////RwBP//////////////
+///0cAT/////////////////9HAE//////////////////RwBP/////////////////0cAT/////
+////////////9HAE//////////////////RwBP/////////////////0cASIiIiIiIiIiIiIiIiI
+hHAERERERERERERERERERERwBExMTExMTExMTE7Ozkl0cATMzMzMzMzMzMzMzMzMxAAARERERERE
+REREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+/////////////////////8AAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGA
+AAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAA8AA
+AAf///////////////8oAAAAEAAAACAAAAABAAQAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA
+////AAAAAAAAAAAAB3d3d3d3d3dERERERERER0////////hHT///////+EdP///////4R0//////
+//hHT///////+EdP///////4R0////////hHT///////+EdIiIiIiIiIR0zMzMzMzMxHxERERERE
+RMAAAAAAAAAAAAAAAAAAAAAA//8AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAABAAD//wAA//8AAAAAAQACACAgEAABAAQA6AIAAAIAEBAQAAEABAAoAQAA
+AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAcDoAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem></ScriptProject></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="SSIS.Pipeline.2">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server v9; (C) 2004 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Data Flow Task</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{AFF7B905-6052-45BC-81F6-2E4E3209D70E}</DTS:Property>
+<DTS:Property DTS:Name="Description">Data Flow Task</DTS:Property>
+<DTS:Property DTS:Name="CreationName">SSIS.Pipeline.2</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><pipeline id="0" name="pipelineXml" description="pipelineXml" defaultBufferMaxRows="10000" engineThreads="5" defaultBufferSize="10485760" BLOBTempStoragePath="" bufferTempStoragePath="" runInOptimizedMode="true">
+<components>
+<component id="7120" name="Flat File Destination" componentClassID="{D658C424-8CF0-441C-B3C4-955E183B7FBA}" description="Flat File Destination" localeId="1033" usesDispositions="false" validateExternalMetadata="True" version="0" pipelineVersion="0" contactInfo="Flat File Destination;Microsoft Corporation;Microsoft SqlServer v9; (C) 2005 Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0">
+<properties>
+<property id="7123" name="Overwrite" dataType="System.Boolean" state="default" isArray="false" description="Specifies whether the data will overwrite or append to the destination file." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">true</property>
+<property id="7124" name="Header" dataType="System.Null" state="default" isArray="false" description="Specifies the text to write to the destination file before any data is written." typeConverter="" UITypeEditor="" containsID="false" expressionType="Notify"/></properties>
+<connections>
+<connection id="7122" name="FlatFileConnection" description="" connectionManagerID="{465CD626-24FB-440B-997F-C9C6816B80BA}"/></connections>
+<inputs>
+<input id="7121" name="Flat File Destination Input" description="" hasSideEffects="true" dangling="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><inputColumns>
+<inputColumn id="7185" name="" description="" lineageId="7253" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7136" mappedColumnId="0"/>
+<inputColumn id="7186" name="" description="" lineageId="7256" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7137" mappedColumnId="0"/>
+<inputColumn id="7187" name="" description="" lineageId="7259" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7138" mappedColumnId="0"/>
+<inputColumn id="7188" name="" description="" lineageId="7262" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7139" mappedColumnId="0"/>
+<inputColumn id="7189" name="" description="" lineageId="7265" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7140" mappedColumnId="0"/>
+<inputColumn id="7190" name="" description="" lineageId="7268" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7141" mappedColumnId="0"/>
+<inputColumn id="7191" name="" description="" lineageId="7271" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7142" mappedColumnId="0"/>
+<inputColumn id="7192" name="" description="" lineageId="7274" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7143" mappedColumnId="0"/>
+<inputColumn id="7193" name="" description="" lineageId="7277" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7144" mappedColumnId="0"/>
+<inputColumn id="7194" name="" description="" lineageId="7280" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7145" mappedColumnId="0"/>
+<inputColumn id="7195" name="" description="" lineageId="7283" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7146" mappedColumnId="0"/>
+<inputColumn id="7196" name="" description="" lineageId="7286" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7147" mappedColumnId="0"/>
+<inputColumn id="7197" name="" description="" lineageId="7289" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7148" mappedColumnId="0"/>
+<inputColumn id="7198" name="" description="" lineageId="7292" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7149" mappedColumnId="0"/>
+<inputColumn id="7199" name="" description="" lineageId="7295" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7150" mappedColumnId="0"/>
+<inputColumn id="7200" name="" description="" lineageId="7298" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7151" mappedColumnId="0"/>
+<inputColumn id="7201" name="" description="" lineageId="7301" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7152" mappedColumnId="0"/>
+<inputColumn id="7202" name="" description="" lineageId="7304" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7153" mappedColumnId="0"/>
+<inputColumn id="7203" name="" description="" lineageId="7307" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7154" mappedColumnId="0"/>
+<inputColumn id="7204" name="" description="" lineageId="7310" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7155" mappedColumnId="0"/>
+<inputColumn id="7205" name="" description="" lineageId="7313" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7156" mappedColumnId="0"/>
+<inputColumn id="7206" name="" description="" lineageId="7316" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7157" mappedColumnId="0"/>
+<inputColumn id="7207" name="" description="" lineageId="7319" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7158" mappedColumnId="0"/>
+<inputColumn id="7208" name="" description="" lineageId="7322" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7159" mappedColumnId="0"/>
+<inputColumn id="7209" name="" description="" lineageId="7325" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7160" mappedColumnId="0"/>
+<inputColumn id="7210" name="" description="" lineageId="7328" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7161" mappedColumnId="0"/>
+<inputColumn id="7211" name="" description="" lineageId="7331" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7162" mappedColumnId="0"/>
+<inputColumn id="7212" name="" description="" lineageId="7334" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7163" mappedColumnId="0"/>
+<inputColumn id="7213" name="" description="" lineageId="7337" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7164" mappedColumnId="0"/>
+<inputColumn id="7214" name="" description="" lineageId="7340" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7165" mappedColumnId="0"/>
+<inputColumn id="7215" name="" description="" lineageId="7343" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7166" mappedColumnId="0"/>
+<inputColumn id="7216" name="" description="" lineageId="7346" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7167" mappedColumnId="0"/>
+<inputColumn id="7217" name="" description="" lineageId="7349" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7168" mappedColumnId="0"/>
+<inputColumn id="7218" name="" description="" lineageId="7352" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7169" mappedColumnId="0"/>
+<inputColumn id="7219" name="" description="" lineageId="7355" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7170" mappedColumnId="0"/>
+<inputColumn id="7220" name="" description="" lineageId="7358" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7171" mappedColumnId="0"/>
+<inputColumn id="7221" name="" description="" lineageId="7361" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7172" mappedColumnId="0"/>
+<inputColumn id="7222" name="" description="" lineageId="7364" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7173" mappedColumnId="0"/>
+<inputColumn id="7223" name="" description="" lineageId="7367" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7174" mappedColumnId="0"/>
+<inputColumn id="7224" name="" description="" lineageId="7370" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7175" mappedColumnId="0"/>
+<inputColumn id="7225" name="" description="" lineageId="7373" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7176" mappedColumnId="0"/>
+<inputColumn id="7226" name="" description="" lineageId="7376" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7177" mappedColumnId="0"/>
+<inputColumn id="7227" name="" description="" lineageId="7379" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7178" mappedColumnId="0"/>
+<inputColumn id="7228" name="" description="" lineageId="7382" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7179" mappedColumnId="0"/>
+<inputColumn id="7229" name="" description="" lineageId="7385" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7180" mappedColumnId="0"/>
+<inputColumn id="7230" name="" description="" lineageId="7388" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7181" mappedColumnId="0"/>
+<inputColumn id="7231" name="" description="" lineageId="7391" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7182" mappedColumnId="0"/>
+<inputColumn id="7232" name="" description="" lineageId="7394" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7183" mappedColumnId="0"/>
+<inputColumn id="7233" name="" description="" lineageId="7397" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="7184" mappedColumnId="0"/>
+</inputColumns><externalMetadataColumns isUsed="True">
+<externalMetadataColumn id="7136" name="GMCO" description="" precision="0" scale="0" length="5" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7137" name="GMAID" description="" precision="0" scale="0" length="8" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7138" name="GMMCU" description="" precision="0" scale="0" length="12" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7139" name="GMOBJ" description="" precision="0" scale="0" length="6" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7140" name="GMSUB" description="" precision="0" scale="0" length="8" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7141" name="GMANS" description="" precision="0" scale="0" length="25" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7142" name="GMDL01" description="" precision="0" scale="0" length="30" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7143" name="GMLDA" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7144" name="GMBPC" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7145" name="GMPEC" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7146" name="GMBILL" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7147" name="GMCRCD" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7148" name="GMUM" description="" precision="0" scale="0" length="2" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7149" name="GMR001" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7150" name="GMR002" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7151" name="GMR003" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7152" name="GMR004" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7153" name="GMR005" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7154" name="GMR006" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7155" name="GMR007" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7156" name="GMR008" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7157" name="GMR009" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7158" name="GMR010" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7159" name="GMR011" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7160" name="GMR012" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7161" name="GMR013" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7162" name="GMR014" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7163" name="GMR015" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7164" name="GMR016" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7165" name="GMR017" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7166" name="GMR018" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7167" name="GMR019" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7168" name="GMR020" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7169" name="GMR021" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7170" name="GMR022" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7171" name="GMR023" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7172" name="GMOBJA" description="" precision="0" scale="0" length="6" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7173" name="GMSUBA" description="" precision="0" scale="0" length="8" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7174" name="GMWCMP" description="" precision="0" scale="0" length="4" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7175" name="GMCCT" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7176" name="GMERC" description="" precision="0" scale="0" length="2" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7177" name="GMHTC" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7178" name="GMQLDA" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7179" name="GMCCC" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7180" name="GMFMOD" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7181" name="GMUSER" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7182" name="GMPID" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7183" name="GMJOBN" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7184" name="GMUPMJ" description="" precision="6" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/></externalMetadataColumns></input>
+</inputs>
+</component>
+<component id="7237" name="OLE DB Source" componentClassID="{BCEFE59B-6819-47F7-A125-63753B33ABB7}" description="OLE DB Source" localeId="-1" usesDispositions="true" validateExternalMetadata="True" version="7" pipelineVersion="0" contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7">
+<properties>
+<property id="7238" name="CommandTimeout" dataType="System.Int32" state="default" isArray="false" description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">0</property>
+<property id="7239" name="OpenRowset" dataType="System.String" state="default" isArray="false" description="Specifies the name of the database object used to open a rowset." typeConverter="" UITypeEditor="" containsID="false" expressionType="None"></property>
+<property id="7240" name="OpenRowsetVariable" dataType="System.String" state="default" isArray="false" description="Specifies the variable that contains the name of the database object used to open a rowset." typeConverter="" UITypeEditor="" containsID="false" expressionType="None"></property>
+<property id="7241" name="SqlCommand" dataType="System.String" state="default" isArray="false" description="The SQL command to be executed." typeConverter="" UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" containsID="false" expressionType="None">select * from proddta.f0901 where gmco in (274)</property>
+<property id="7242" name="SqlCommandVariable" dataType="System.String" state="default" isArray="false" description="The variable that contains the SQL command to be executed." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">User::SQL</property>
+<property id="7243" name="DefaultCodePage" dataType="System.Int32" state="default" isArray="false" description="Specifies the column code page to use when code page information is unavailable from the data source." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">1252</property>
+<property id="7244" name="AlwaysUseDefaultCodePage" dataType="System.Boolean" state="default" isArray="false" description="Forces the use of the DefaultCodePage property value when describing character data." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">true</property>
+<property id="7245" name="AccessMode" dataType="System.Int32" state="default" isArray="false" description="Specifies the mode used to access the database." typeConverter="AccessMode" UITypeEditor="" containsID="false" expressionType="None">3</property>
+<property id="7251" name="ParameterMapping" dataType="System.String" state="default" isArray="false" description="The mappings between the parameters in the SQL command and variables." typeConverter="" UITypeEditor="" containsID="false" expressionType="None"></property></properties>
+<connections>
+<connection id="7246" name="OleDbConnection" description="The OLE DB runtime connection used to access the database." connectionManagerID="{FCE1F2C6-70A4-472D-BBB6-ACCD32AFF3D2}"/></connections>
+<outputs>
+<output id="7247" name="OLE DB Source Output" description="" exclusionGroup="0" synchronousInputId="0" deleteOutputOnPathDetached="false" hasSideEffects="false" dangling="false" isErrorOut="false" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="7253" name="GMCO" description="" lineageId="7253" precision="0" scale="0" length="5" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7252" mappedColumnId="0"/>
+<outputColumn id="7256" name="GMAID" description="" lineageId="7256" precision="0" scale="0" length="8" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7255" mappedColumnId="0"/>
+<outputColumn id="7259" name="GMMCU" description="" lineageId="7259" precision="0" scale="0" length="12" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7258" mappedColumnId="0"/>
+<outputColumn id="7262" name="GMOBJ" description="" lineageId="7262" precision="0" scale="0" length="6" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7261" mappedColumnId="0"/>
+<outputColumn id="7265" name="GMSUB" description="" lineageId="7265" precision="0" scale="0" length="8" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7264" mappedColumnId="0"/>
+<outputColumn id="7268" name="GMANS" description="" lineageId="7268" precision="0" scale="0" length="25" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7267" mappedColumnId="0"/>
+<outputColumn id="7271" name="GMDL01" description="" lineageId="7271" precision="0" scale="0" length="30" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7270" mappedColumnId="0"/>
+<outputColumn id="7274" name="GMLDA" description="" lineageId="7274" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7273" mappedColumnId="0"/>
+<outputColumn id="7277" name="GMBPC" description="" lineageId="7277" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7276" mappedColumnId="0"/>
+<outputColumn id="7280" name="GMPEC" description="" lineageId="7280" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7279" mappedColumnId="0"/>
+<outputColumn id="7283" name="GMBILL" description="" lineageId="7283" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7282" mappedColumnId="0"/>
+<outputColumn id="7286" name="GMCRCD" description="" lineageId="7286" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7285" mappedColumnId="0"/>
+<outputColumn id="7289" name="GMUM" description="" lineageId="7289" precision="0" scale="0" length="2" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7288" mappedColumnId="0"/>
+<outputColumn id="7292" name="GMR001" description="" lineageId="7292" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7291" mappedColumnId="0"/>
+<outputColumn id="7295" name="GMR002" description="" lineageId="7295" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7294" mappedColumnId="0"/>
+<outputColumn id="7298" name="GMR003" description="" lineageId="7298" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7297" mappedColumnId="0"/>
+<outputColumn id="7301" name="GMR004" description="" lineageId="7301" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7300" mappedColumnId="0"/>
+<outputColumn id="7304" name="GMR005" description="" lineageId="7304" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7303" mappedColumnId="0"/>
+<outputColumn id="7307" name="GMR006" description="" lineageId="7307" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7306" mappedColumnId="0"/>
+<outputColumn id="7310" name="GMR007" description="" lineageId="7310" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7309" mappedColumnId="0"/>
+<outputColumn id="7313" name="GMR008" description="" lineageId="7313" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7312" mappedColumnId="0"/>
+<outputColumn id="7316" name="GMR009" description="" lineageId="7316" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7315" mappedColumnId="0"/>
+<outputColumn id="7319" name="GMR010" description="" lineageId="7319" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7318" mappedColumnId="0"/>
+<outputColumn id="7322" name="GMR011" description="" lineageId="7322" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7321" mappedColumnId="0"/>
+<outputColumn id="7325" name="GMR012" description="" lineageId="7325" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7324" mappedColumnId="0"/>
+<outputColumn id="7328" name="GMR013" description="" lineageId="7328" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7327" mappedColumnId="0"/>
+<outputColumn id="7331" name="GMR014" description="" lineageId="7331" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7330" mappedColumnId="0"/>
+<outputColumn id="7334" name="GMR015" description="" lineageId="7334" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7333" mappedColumnId="0"/>
+<outputColumn id="7337" name="GMR016" description="" lineageId="7337" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7336" mappedColumnId="0"/>
+<outputColumn id="7340" name="GMR017" description="" lineageId="7340" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7339" mappedColumnId="0"/>
+<outputColumn id="7343" name="GMR018" description="" lineageId="7343" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7342" mappedColumnId="0"/>
+<outputColumn id="7346" name="GMR019" description="" lineageId="7346" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7345" mappedColumnId="0"/>
+<outputColumn id="7349" name="GMR020" description="" lineageId="7349" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7348" mappedColumnId="0"/>
+<outputColumn id="7352" name="GMR021" description="" lineageId="7352" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7351" mappedColumnId="0"/>
+<outputColumn id="7355" name="GMR022" description="" lineageId="7355" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7354" mappedColumnId="0"/>
+<outputColumn id="7358" name="GMR023" description="" lineageId="7358" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7357" mappedColumnId="0"/>
+<outputColumn id="7361" name="GMOBJA" description="" lineageId="7361" precision="0" scale="0" length="6" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7360" mappedColumnId="0"/>
+<outputColumn id="7364" name="GMSUBA" description="" lineageId="7364" precision="0" scale="0" length="8" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7363" mappedColumnId="0"/>
+<outputColumn id="7367" name="GMWCMP" description="" lineageId="7367" precision="0" scale="0" length="4" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7366" mappedColumnId="0"/>
+<outputColumn id="7370" name="GMCCT" description="" lineageId="7370" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7369" mappedColumnId="0"/>
+<outputColumn id="7373" name="GMERC" description="" lineageId="7373" precision="0" scale="0" length="2" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7372" mappedColumnId="0"/>
+<outputColumn id="7376" name="GMHTC" description="" lineageId="7376" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7375" mappedColumnId="0"/>
+<outputColumn id="7379" name="GMQLDA" description="" lineageId="7379" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7378" mappedColumnId="0"/>
+<outputColumn id="7382" name="GMCCC" description="" lineageId="7382" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7381" mappedColumnId="0"/>
+<outputColumn id="7385" name="GMFMOD" description="" lineageId="7385" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7384" mappedColumnId="0"/>
+<outputColumn id="7388" name="GMUSER" description="" lineageId="7388" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7387" mappedColumnId="0"/>
+<outputColumn id="7391" name="GMPID" description="" lineageId="7391" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7390" mappedColumnId="0"/>
+<outputColumn id="7394" name="GMJOBN" description="" lineageId="7394" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7393" mappedColumnId="0"/>
+<outputColumn id="7397" name="GMUPMJ" description="" lineageId="7397" precision="6" scale="0" length="0" dataType="numeric" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7396" mappedColumnId="0"/>
+<outputColumn id="7400" name="GMUPMT" description="" lineageId="7400" precision="0" scale="0" length="38" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="7399" mappedColumnId="0"/></outputColumns><externalMetadataColumns isUsed="True">
+<externalMetadataColumn id="7252" name="GMCO" description="" precision="0" scale="0" length="5" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7255" name="GMAID" description="" precision="0" scale="0" length="8" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7258" name="GMMCU" description="" precision="0" scale="0" length="12" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7261" name="GMOBJ" description="" precision="0" scale="0" length="6" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7264" name="GMSUB" description="" precision="0" scale="0" length="8" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7267" name="GMANS" description="" precision="0" scale="0" length="25" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7270" name="GMDL01" description="" precision="0" scale="0" length="30" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7273" name="GMLDA" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7276" name="GMBPC" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7279" name="GMPEC" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7282" name="GMBILL" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7285" name="GMCRCD" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7288" name="GMUM" description="" precision="0" scale="0" length="2" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7291" name="GMR001" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7294" name="GMR002" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7297" name="GMR003" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7300" name="GMR004" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7303" name="GMR005" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7306" name="GMR006" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7309" name="GMR007" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7312" name="GMR008" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7315" name="GMR009" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7318" name="GMR010" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7321" name="GMR011" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7324" name="GMR012" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7327" name="GMR013" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7330" name="GMR014" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7333" name="GMR015" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7336" name="GMR016" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7339" name="GMR017" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7342" name="GMR018" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7345" name="GMR019" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7348" name="GMR020" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7351" name="GMR021" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7354" name="GMR022" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7357" name="GMR023" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7360" name="GMOBJA" description="" precision="0" scale="0" length="6" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7363" name="GMSUBA" description="" precision="0" scale="0" length="8" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7366" name="GMWCMP" description="" precision="0" scale="0" length="4" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7369" name="GMCCT" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7372" name="GMERC" description="" precision="0" scale="0" length="2" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7375" name="GMHTC" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7378" name="GMQLDA" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7381" name="GMCCC" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7384" name="GMFMOD" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7387" name="GMUSER" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7390" name="GMPID" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7393" name="GMJOBN" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="7396" name="GMUPMJ" description="" precision="6" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="7399" name="GMUPMT" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/></externalMetadataColumns></output>
+<output id="7248" name="OLE DB Source Error Output" description="" exclusionGroup="0" synchronousInputId="0" deleteOutputOnPathDetached="false" hasSideEffects="false" dangling="false" isErrorOut="true" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="7254" name="GMCO" description="" lineageId="7254" precision="0" scale="0" length="5" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7257" name="GMAID" description="" lineageId="7257" precision="0" scale="0" length="8" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7260" name="GMMCU" description="" lineageId="7260" precision="0" scale="0" length="12" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7263" name="GMOBJ" description="" lineageId="7263" precision="0" scale="0" length="6" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7266" name="GMSUB" description="" lineageId="7266" precision="0" scale="0" length="8" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7269" name="GMANS" description="" lineageId="7269" precision="0" scale="0" length="25" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7272" name="GMDL01" description="" lineageId="7272" precision="0" scale="0" length="30" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7275" name="GMLDA" description="" lineageId="7275" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7278" name="GMBPC" description="" lineageId="7278" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7281" name="GMPEC" description="" lineageId="7281" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7284" name="GMBILL" description="" lineageId="7284" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7287" name="GMCRCD" description="" lineageId="7287" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7290" name="GMUM" description="" lineageId="7290" precision="0" scale="0" length="2" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7293" name="GMR001" description="" lineageId="7293" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7296" name="GMR002" description="" lineageId="7296" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7299" name="GMR003" description="" lineageId="7299" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7302" name="GMR004" description="" lineageId="7302" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7305" name="GMR005" description="" lineageId="7305" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7308" name="GMR006" description="" lineageId="7308" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7311" name="GMR007" description="" lineageId="7311" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7314" name="GMR008" description="" lineageId="7314" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7317" name="GMR009" description="" lineageId="7317" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7320" name="GMR010" description="" lineageId="7320" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7323" name="GMR011" description="" lineageId="7323" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7326" name="GMR012" description="" lineageId="7326" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7329" name="GMR013" description="" lineageId="7329" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7332" name="GMR014" description="" lineageId="7332" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7335" name="GMR015" description="" lineageId="7335" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7338" name="GMR016" description="" lineageId="7338" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7341" name="GMR017" description="" lineageId="7341" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7344" name="GMR018" description="" lineageId="7344" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7347" name="GMR019" description="" lineageId="7347" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7350" name="GMR020" description="" lineageId="7350" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7353" name="GMR021" description="" lineageId="7353" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7356" name="GMR022" description="" lineageId="7356" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7359" name="GMR023" description="" lineageId="7359" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7362" name="GMOBJA" description="" lineageId="7362" precision="0" scale="0" length="6" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7365" name="GMSUBA" description="" lineageId="7365" precision="0" scale="0" length="8" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7368" name="GMWCMP" description="" lineageId="7368" precision="0" scale="0" length="4" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7371" name="GMCCT" description="" lineageId="7371" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7374" name="GMERC" description="" lineageId="7374" precision="0" scale="0" length="2" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7377" name="GMHTC" description="" lineageId="7377" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7380" name="GMQLDA" description="" lineageId="7380" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7383" name="GMCCC" description="" lineageId="7383" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7386" name="GMFMOD" description="" lineageId="7386" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7389" name="GMUSER" description="" lineageId="7389" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7392" name="GMPID" description="" lineageId="7392" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7395" name="GMJOBN" description="" lineageId="7395" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7398" name="GMUPMJ" description="" lineageId="7398" precision="6" scale="0" length="0" dataType="numeric" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7401" name="GMUPMT" description="" lineageId="7401" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7249" name="ErrorCode" description="" lineageId="7249" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="1" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="7250" name="ErrorColumn" description="" lineageId="7250" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="2" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/></outputColumns><externalMetadataColumns isUsed="False"/></output>
+</outputs>
+</component>
+</components>
+<paths>
+<path id="7403" name="OLE DB Source Output" description="" startId="7247" endId="7121"/>
+</paths></pipeline></DTS:ObjectData></DTS:Executable>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{dd81bc03-97f8-4944-99b4-2ffff254a51c}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{AFF7B905-6052-45BC-81F6-2E4E3209D70E}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">Constraint</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{38E3D835-B6E1-4241-83CD-770776669783}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="ObjectName">F0901</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{9306B8D5-FB7A-4868-AE12-6862CAD7B745}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">SSIS.Package.2</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PrecedenceConstraint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:EvalOp&gt;Constraint&lt;/dwd:EvalOp&gt;&lt;/PrecedenceConstraint&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{38E3D835-B6E1-4241-83CD-770776669783}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{A47ABCF9-80C4-4B78-B646-5FB7C96FB162}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsControlFlowDiagram&gt;&lt;dwd:BoundingLeft&gt;1000&lt;/dwd:BoundingLeft&gt;&lt;dwd:BoundingTop&gt;-2000&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="0" scrolltop="-3000" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="27993" y="14208" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Data Flow Task" left="1103" top="3116" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{AFF7B905-6052-45BC-81F6-2E4E3209D70E}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Script Task" left="1000" top="460" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3863" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="00080000170f00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{dd81bc03-97f8-4944-99b4-2ffff254a51c}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="2503" top="1225" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="828" height="2391" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{38E3D835-B6E1-4241-83CD-770776669783}" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="2" destid="1" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="2931" y="1624" /&gt;
+      &lt;point x="2931" y="2370" /&gt;
+      &lt;point x="2902" y="2370" /&gt;
+      &lt;point x="2902" y="3116" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;dwd:PersistedViewPortTop&gt;-3000&lt;/dwd:PersistedViewPortTop&gt;&lt;/dwd:DtsControlFlowDiagram&gt;&lt;/Package&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{9306B8D5-FB7A-4868-AE12-6862CAD7B745}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{5750A854-D4B3-4803-B9D2-7F7E842DBCA8}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;TaskHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsDataFlowDiagram&gt;&lt;dwd:BoundingTop&gt;-3500&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="11" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="0" scrolltop="-4500" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="27993" y="13282" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="0" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Flat File Destination" left="504" top="-1357" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{AFF7B905-6052-45BC-81F6-2E4E3209D70E}/components/7120" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="OLE DB Source" left="503" top="-3500" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{AFF7B905-6052-45BC-81F6-2E4E3209D70E}/components/7237" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="1903" top="-2735" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="800" height="1878" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{AFF7B905-6052-45BC-81F6-2E4E3209D70E}/paths/7403" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="2" destid="1" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="2302" y="-2336" /&gt;
+      &lt;point x="2302" y="-1846" /&gt;
+      &lt;point x="2303" y="-1846" /&gt;
+      &lt;point x="2303" y="-1357" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;dwd:PersistedViewPortTop&gt;-4500&lt;/dwd:PersistedViewPortTop&gt;&lt;/dwd:DtsDataFlowDiagram&gt;&lt;dwd:DtsComponentDesignerPropertiesList&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;948	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;7237	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;1	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;1	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;/dwd:DtsComponentDesignerPropertiesList&gt;&lt;/TaskHost&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{AFF7B905-6052-45BC-81F6-2E4E3209D70E}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{A8A251BE-A2D5-45CA-9A21-DA03FE01C87C}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PipelinePath xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:SourceName&gt;OLE DB Source Output&lt;/dwd:SourceName&gt;&lt;dwd:DestinationName&gt;Flat File Destination Input&lt;/dwd:DestinationName&gt;&lt;/PipelinePath&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{AFF7B905-6052-45BC-81F6-2E4E3209D70E}-7403</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{445E541E-41D3-4682-8174-94275E478F73}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsControlFlowDiagram&gt;&lt;dwd:BoundingLeft&gt;1000&lt;/dwd:BoundingLeft&gt;&lt;dwd:BoundingTop&gt;-2000&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="0" scrolltop="-3000" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="27993" y="14208" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Data Flow Task" left="1103" top="3116" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{AFF7B905-6052-45BC-81F6-2E4E3209D70E}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Script Task" left="1000" top="460" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3863" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="00080000170f00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{dd81bc03-97f8-4944-99b4-2ffff254a51c}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="2503" top="1225" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="828" height="2391" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{38E3D835-B6E1-4241-83CD-770776669783}" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="2" destid="1" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="2931" y="1624" /&gt;
+      &lt;point x="2931" y="2370" /&gt;
+      &lt;point x="2902" y="2370" /&gt;
+      &lt;point x="2902" y="3116" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;dwd:PersistedViewPortTop&gt;-3000&lt;/dwd:PersistedViewPortTop&gt;&lt;/dwd:DtsControlFlowDiagram&gt;&lt;/Package&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">package-diagram</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{622C5B08-0A5F-493C-B984-A0C3FDB32897}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable></DTS:Executable>

@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{D183A3D8-5FD8-494B-B014-37F57B35E655}") = "KPMG Audit Extracts", "KPMG Audit Extracts\KPMG Audit Extracts.dtproj", "{582F4182-8C37-4781-A613-3B277392B443}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = KPMG\u0020Audit\u0020Extracts\\KPMG\u0020Audit\u0020Extracts.dtproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = KPMG\u0020Audit\u0020Extracts\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{582F4182-8C37-4781-A613-3B277392B443}.Development|Default.ActiveCfg = Development
+		{582F4182-8C37-4781-A613-3B277392B443}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

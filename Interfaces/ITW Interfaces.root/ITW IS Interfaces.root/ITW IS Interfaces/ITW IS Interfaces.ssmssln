@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "ITW Interfaces", "ITW Interfaces\ITW Interfaces.ssmssqlproj", "{A912F26A-F2FB-4EBC-96FD-7F5B09FDAFE9}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectName0 = \u0022$/Interfaces/ITW\u0020Interfaces.root/ITW\u0020IS\u0020Interfaces.root/ITW\u0020IS\u0020Interfaces\u0022,\u0020WGAAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = ITW\u0020Interfaces\\ITW\u0020Interfaces.ssmssqlproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = ITW\u0020Interfaces\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00000000-0000-0000-0000-000000000000}.Default|Default.ActiveCfg = Default
+		{A912F26A-F2FB-4EBC-96FD-7F5B09FDAFE9}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{D183A3D8-5FD8-494B-B014-37F57B35E655}") = "CRA Audit Extracts", "CRA Audit Extracts\CRA Audit Extracts.dtproj", "{0F59C854-7B06-47E8-B2BF-9B267DB9837C}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CRA\u0020Audit\u0020Extracts\\CRA\u0020Audit\u0020Extracts.dtproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = CRA\u0020Audit\u0020Extracts\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F59C854-7B06-47E8-B2BF-9B267DB9837C}.Development|Default.ActiveCfg = Development
+		{0F59C854-7B06-47E8-B2BF-9B267DB9837C}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

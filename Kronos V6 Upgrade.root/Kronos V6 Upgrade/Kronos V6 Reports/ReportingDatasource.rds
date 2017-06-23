@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ReportingDatasource</Name>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=10.31.63.86;Initial Catalog=WFCDB;</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>8482d960-e348-4360-8e8c-c4777486501a</DataSourceID>
+</RptDataSource>

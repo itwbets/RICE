@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Inntopia">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="sql08\edw:IDIRECTORY\mfraser">
+          <Created>2015-11-30T09:11:37.6257823-08:00</Created>
+          <Type>SQL</Type>
+          <Server>sql08\edw</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>INTERFACE</InitialDB>
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="sql19\edw:IDIRECTORY\mfraser">
+          <Created>2015-12-15T14:33:03.8684301-08:00</Created>
+          <Type>SQL</Type>
+          <Server>sql19\edw</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="All records for 1 Itinerary.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>All records for 1 Itinerary.sql</FullPath>
+        </FileNode>
+        <FileNode Name="AR Billings and Credits Detail by Date.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>AR Billings and Credits Detail by Date.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Clear all tables.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql19\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql19\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Clear all tables.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Create Indexes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql19\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql19\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Create Indexes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Delete all data for GL Date.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Delete all data for GL Date.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Find and delete multiple batches on a date.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql19\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql19\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Find and delete multiple batches on a date.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Fix Multiple GL Dates in Batch.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql19\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql19\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Fix Multiple GL Dates in Batch.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reconcilliation by GL Date - Detail.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Reconcilliation by GL Date - Detail.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reconcilliation by GL Date - Summary - CPA Detail.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Reconcilliation by GL Date - Summary - CPA Detail.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reconcilliation by GL Date - Summary - CPAA Detail.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Reconcilliation by GL Date - Summary - CPAA Detail.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reconcilliation by GL Date - Summary.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Reconcilliation by GL Date - Summary.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reconcilliation by Itinerary - CB Detail.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Reconcilliation by Itinerary - CB Detail.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reconcilliation by Itinerary - CPA Detail.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Reconcilliation by Itinerary - CPA Detail.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reconcilliation by Itinerary - CPAA Detail.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Reconcilliation by Itinerary - CPAA Detail.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reconcilliation by Itinerary - Detail.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Reconcilliation by Itinerary - Detail.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reconcilliation by Itinerary - Summary.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Reconcilliation by Itinerary - Summary.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Report Table Definitions.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Report Table Definitions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Resort Code Parameter.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:sql08\edw:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>sql08\edw</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Resort Code Parameter.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+  <SccProjectName>"$/Interfaces/Inntopia.root/Inntopia", IJAAAAAA</SccProjectName>
+  <SccAuxPath />
+  <SccLocalPath>..</SccLocalPath>
+  <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+</SqlWorkbenchSqlProject>

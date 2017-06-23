@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Kronos Report Queries", "Kronos Report Queries\Kronos Report Queries.ssmssqlproj", "{19229805-E8B5-4073-AFD9-BFFBDF33DA36}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "MyERP Queries", "MyERP Queries\MyERP Queries.ssmssqlproj", "{CD18C0C8-0AEB-42C9-A352-899C8B40C99F}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectName0 = \u0022$/Reports/Kronos\u0020Reports.root/Kronos\u0020Report\u0020Queries.root/Kronos\u0020Report\u0020Queries\u0022,\u0020UCAAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = Kronos\u0020Report\u0020Queries\\Kronos\u0020Report\u0020Queries.ssmssqlproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Kronos\u0020Report\u0020Queries\\
+		SccProjectUniqueName2 = MyERP\u0020Queries\\MyERP\u0020Queries.ssmssqlproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = MyERP\u0020Queries\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19229805-E8B5-4073-AFD9-BFFBDF33DA36}.Default|Default.ActiveCfg = Default
+		{00000000-0000-0000-0000-000000000000}.Default|Default.ActiveCfg = Default
+		{CD18C0C8-0AEB-42C9-A352-899C8B40C99F}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

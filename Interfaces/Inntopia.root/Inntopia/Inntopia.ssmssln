@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# SQL Server Management Studio Solution File, Format Version 11.00
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Inntopia", "Inntopia\Inntopia.ssmssqlproj", "{9D5784EB-0BD7-4134-B70E-67312741C044}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectName0 = \u0022$/Interfaces/Inntopia.root/Inntopia\u0022,\u0020IJAAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = Inntopia\\Inntopia.ssmssqlproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Inntopia\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D5784EB-0BD7-4134-B70E-67312741C044}.Default|Default.ActiveCfg = Default
+		{AC4DF748-87DA-41EA-8F6B-02EC8574AF52}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

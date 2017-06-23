@@ -1,0 +1,1853 @@
+<?xml version="1.0"?><DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts" DTS:ExecutableType="SSIS.Package.2">
+<DTS:Property DTS:Name="PackageFormatVersion">3</DTS:Property>
+<DTS:Property DTS:Name="VersionComments"></DTS:Property>
+<DTS:Property DTS:Name="CreatorName">IDIRECTORY\MattF</DTS:Property>
+<DTS:Property DTS:Name="CreatorComputerName">WSVAN-185</DTS:Property>
+<DTS:Property DTS:Name="CreationDate" DTS:DataType="7">6/15/2006 10:48:16 AM</DTS:Property>
+<DTS:Property DTS:Name="PackageType">5</DTS:Property>
+<DTS:Property DTS:Name="ProtectionLevel">1</DTS:Property>
+<DTS:Property DTS:Name="MaxConcurrentExecutables">-1</DTS:Property>
+<DTS:Property DTS:Name="PackagePriorityClass">0</DTS:Property>
+<DTS:Property DTS:Name="VersionMajor">1</DTS:Property>
+<DTS:Property DTS:Name="VersionMinor">0</DTS:Property>
+<DTS:Property DTS:Name="VersionBuild">97</DTS:Property>
+<DTS:Property DTS:Name="VersionGUID">{AF94980C-3BED-4914-A946-14DAFE77AC58}</DTS:Property>
+<DTS:Property DTS:Name="EnableConfig">-1</DTS:Property>
+<DTS:Property DTS:Name="CheckpointFileName"></DTS:Property>
+<DTS:Property DTS:Name="SaveCheckpoints">0</DTS:Property>
+<DTS:Property DTS:Name="CheckpointUsage">0</DTS:Property>
+<DTS:Property DTS:Name="SuppressConfigurationWarnings">0</DTS:Property>
+<DTS:ConnectionManager>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">F0902</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{D287CEF2-9CD8-493C-800B-21E67174074E}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">FLATFILE</DTS:Property><DTS:PropertyExpression DTS:Name="ConnectionString">@[User::FilePath] + "\\Data\\" + @[User::CurrentCompanySet]  + " - F0902 - " + @[User::Company] + " - FY" + (DT_STR, 2, 1252) @[User::varFY] + ".csv"</DTS:PropertyExpression><DTS:ObjectData><DTS:ConnectionManager>
+<DTS:Property DTS:Name="FileUsageType">0</DTS:Property>
+<DTS:Property DTS:Name="Format">Delimited</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">1033</DTS:Property>
+<DTS:Property DTS:Name="Unicode">0</DTS:Property>
+<DTS:Property DTS:Name="HeaderRowsToSkip">0</DTS:Property>
+<DTS:Property DTS:Name="HeaderRowDelimiter" xml:space="preserve">_x000D__x000A_</DTS:Property>
+<DTS:Property DTS:Name="ColumnNamesInFirstDataRow">-1</DTS:Property>
+<DTS:Property DTS:Name="RowDelimiter" xml:space="preserve"></DTS:Property>
+<DTS:Property DTS:Name="DataRowsToSkip">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualifier">&lt;none&gt;</DTS:Property>
+<DTS:Property DTS:Name="CodePage">1252</DTS:Property>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">8</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAID</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B3F9CAF4-2824-42DC-81C0-0239BFEC3BAC}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBCTRY</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{381ECEDD-3EDA-496E-B2A5-6D270EED822F}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBFY</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{7004017D-2C30-486D-BE77-A3F2C40366E5}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">4</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBFQ</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{4147E73F-B43C-4196-8AF8-68B1A71A7345}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">2</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBLT</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B3CF30B4-0DB8-4ED1-9E58-B75AB3CD6FB4}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">8</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBSBL</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{A35A699A-0AF9-450C-B360-A714DEBA73E0}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">5</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBCO</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{4B3D8A12-C7B2-4ACB-A609-DF8DEBCA6343}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAPYC</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{131B74D3-F2B3-4988-8BC5-651F1A57DD28}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN01</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C534FA2E-DC17-4CE4-96BC-64FC9D304974}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN02</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{D8BDA182-424E-4DD4-8D40-440C50B61A75}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN03</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{F96D1E9B-04F9-49A6-9800-B26DB4C03FA0}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN04</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{868AF203-A51F-4B96-A82C-E748E6454307}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN05</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{29049A84-F76C-499E-B538-118E60B7E12C}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN06</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{4349C234-560F-4BF1-A9EB-3E26B5502D13}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN07</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{26DFD1EC-D330-4C9F-B538-449ABD4A3728}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN08</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{DD659E54-991E-4E23-B953-B92C62775412}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN09</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{3676F450-D11B-4CCD-B9B9-64B15959AC5A}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN10</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C5B30EE1-379D-42FD-86F0-C04A25ECDA81}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN11</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{F0645B32-8938-467B-8EC5-FC718D8D9C35}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN12</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{7CDD77D2-0A83-4902-B22E-1EEBADC4EEA1}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN13</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{593C458B-4EC4-41DD-B684-C7A3D434ABE1}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAN14</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{35CA009D-26C5-4D27-B740-0083D466B771}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAPYN</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{2E8D5FFA-C047-4C04-B5DF-FE1431782AE6}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBAWTD</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{9286CCF7-9BC7-42D5-92A4-96BA6DD09D43}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBBORG</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B30ABA45-91BD-42A3-9562-4CA640E5C077}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBPOU</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{6449E556-137D-4276-816E-E37D655ADEC2}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBPC</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{6244F8F7-8A8E-4809-AB63-1F299952FA04}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBTKER</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{0FD4BC79-FFEC-4576-900E-59A14987A54A}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBBREQ</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C2C82EE4-6E9A-4D77-8346-D9A94616DE52}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBBAPR</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{8B85BC92-E87A-4417-A872-304E7FBFB8EE}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">12</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBMCU</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C6E204F8-534F-4F8A-941A-89423F8C3A42}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">6</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBOBJ</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{E37ECBA1-72B5-4EC2-ACD2-6B4212275748}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">8</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBSUB</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B0E12B66-C252-4E81-BBB1-41115525968A}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">10</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBUSER</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{83B864F8-2366-45C3-971C-5CE8BEDFA9E5}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">10</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBPID</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{0E0AF985-D462-434D-B567-7A5ECAE45F0B}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">6</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBUPMJ</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{785DA39F-467E-4D7B-8B4D-D4E8884F0F77}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">10</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBJOBN</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{53726805-40FF-468B-A23A-6C47FFCAE2B3}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">1</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBSBLT</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{7F4C6195-E7BD-4639-8926-4C758B5A2813}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">0</DTS:Property>
+<DTS:Property DTS:Name="DataType">131</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">38</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBUPMT</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{47DD06D1-A479-4807-A30E-B8EF99E3F85B}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x007C_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBCRCD</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{28B22E2E-3B24-4416-B970-19FBE73E5836}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ColumnType">Delimited</DTS:Property>
+<DTS:Property DTS:Name="ColumnDelimiter" xml:space="preserve">_x000D__x000A_</DTS:Property>
+<DTS:Property DTS:Name="ColumnWidth">0</DTS:Property>
+<DTS:Property DTS:Name="MaximumWidth">3</DTS:Property>
+<DTS:Property DTS:Name="DataType">129</DTS:Property>
+<DTS:Property DTS:Name="DataPrecision">0</DTS:Property>
+<DTS:Property DTS:Name="DataScale">0</DTS:Property>
+<DTS:Property DTS:Name="TextQualified">-1</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GBCRCX</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{0FB0FD6A-7EFE-4932-8554-CA56FF810918}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:FlatFileColumn>
+<DTS:Property DTS:Name="ConnectionString">\Data\ - F0902 -  - FY0.csv</DTS:Property></DTS:ConnectionManager></DTS:ObjectData></DTS:ConnectionManager>
+<DTS:ConnectionManager>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">JDEPROD</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{1AB82DE5-CD77-4940-BFFA-F9EDCF4E0F7C}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">OLEDB</DTS:Property><DTS:ObjectData><DTS:ConnectionManager>
+<DTS:Property DTS:Name="Retain">0</DTS:Property>
+<DTS:Property DTS:Name="ConnectionString">Data Source=JDEPROD;User ID=mfraser;Provider=MSDAORA.1;Persist Security Info=True;</DTS:Property></DTS:ConnectionManager></DTS:ObjectData></DTS:ConnectionManager>
+<DTS:ConnectionManager>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">JDEPROD.infprod</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{9FA02DC8-5CAA-4364-A875-3A80674BF6DF}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">OLEDB</DTS:Property><DTS:ObjectData><DTS:ConnectionManager>
+<DTS:Property DTS:Name="Retain">0</DTS:Property><DTS:Password DTS:Name="Password" Sensitive="1" Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcbBsiOOwmkm7136nZJuE+gAAAAAIAAAARABUAFMAAAADZgAAqAAAABAAAADAjJtg8VxUUgtUPA/Kk+jlAAAAAASAAACgAAAAEAAAAKrXIs5g/aMCZGJ5lr9EgSgYAAAAyF8SgyMsmYVrmwMmY/bwlvl8nHDrKMQ1FAAAAKVq5VR3LCWqf3w1mDObO+O+x87M</DTS:Password>
+<DTS:Property DTS:Name="ConnectionString">Data Source=JDEPROD;User ID=infprod;Provider=MSDAORA.1;Persist Security Info=True;</DTS:Property></DTS:ConnectionManager></DTS:ObjectData></DTS:ConnectionManager>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">0</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">CurrentCompany</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable">\Package.Variables[User::Company].Properties[Value]</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">Company</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{032CFC56-2F51-4DA2-AC1B-07F63FAAB3A9}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">0</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">CurrentCompanySetName</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable">\Package.Variables[User::CurrentCompanySet].Properties[Value]</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">Current Company Set</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C88B916A-93DE-4F98-9879-79191C7DA5A6}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">0</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">FilePathRoot</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable">\Package.Variables[User::FilePath].Properties[Value]</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">File Path Root</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{38CA4710-A656-4E5D-B726-C754CA3E7FC7}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">0</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">FiscalYear</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable">\Package.Variables[User::varFY].Properties[Value]</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">Fiscal Year</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{38F7AF74-E340-47DB-B645-D35FCC9F6C74}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Property DTS:Name="LastModifiedProductVersion">10.0.1600.22</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">1033</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">2345</DTS:Property><DTS:VariableValue DTS:DataType="8"></DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">Company</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{A7A1CD61-7D5D-46C5-B950-2F29C40B59AD}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">2345</DTS:Property><DTS:VariableValue DTS:DataType="8"></DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">CurrentCompanySet</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C3718839-46E7-4AE0-A43B-54E77E23751D}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">2345</DTS:Property><DTS:VariableValue DTS:DataType="8"></DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">FilePath</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{43932CD8-CF36-4B96-8893-772DABE521D6}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">6789</DTS:Property><DTS:VariableValue DTS:DataType="3">0</DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">varFY</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{48ED6A92-B1CE-4E88-BC8C-3015A8A0BE1D}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">2345</DTS:Property><DTS:VariableValue DTS:DataType="8">select * from proddta.f0902 where gbfy = 4 and gbctry = 20 and gbco = '00102'</DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">varSQL</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{80E01198-11BD-4BB0-B1A9-34A113AF6E7A}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask, Microsoft.SqlServer.ScriptTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" DTS:ThreadHint="0">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact"></DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Set SQL Query</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{758AB628-6B72-4346-B081-14E477822818}</DTS:Property>
+<DTS:Property DTS:Name="Description">Script Task</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask, Microsoft.SqlServer.ScriptTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><ScriptProject Name="ScriptTask_b5c03a22d86a4d589edd5c9efde6fbde" VSTAMajorVersion="2" VSTAMinorVersion="1" Language="VisualBasic" EntryPoint="Main" ReadOnlyVariables="User::Company,User::varFY" ReadWriteVariables="varSQL"><ProjectItem Name="\scripttask_b5c03a22d86a4d589edd5c9efde6fbde.vbproj">
+<![CDATA[<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- This section defines project-level properties.
+
+       Configuration - Specifies whether the default configuration is Release or Debug.
+       Platform - Specifies what CPU the output of this project can run on.
+       OutputType - Must be "Library" for VSTA.
+       NoStandardLibraries - Set to "false" for VSTA.
+       RootNamespace - In C#, this specifies the namespace given to new files.
+                       In Visual Basic, all objects are wrapped in this namespace at runtime.
+       AssemblyName - Name of the output assembly.
+  -->
+  <PropertyGroup>
+    <ProjectTypeGuids>{A860303F-1F3F-4691-B57E-529FC101A107};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ScriptTask_b5c03a22d86a4d589edd5c9efde6fbde.vbproj</RootNamespace>
+    <AssemblyName>ScriptTask_b5c03a22d86a4d589edd5c9efde6fbde.vbproj</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ProjectGuid>{63E0688B-40CF-4D67-892F-B4CB8B384AE9}</ProjectGuid>
+  </PropertyGroup>
+  <!-- This section defines properties that are set when the "Debug" configuration is
+       selected.
+
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of the project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+  </PropertyGroup>
+  <!-- This section defines properties that are set when the "Release" configuration is
+       selected.
+
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of the project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+  </PropertyGroup>
+  <!-- This section enables pre- and post-build steps. However,
+       it is recommended that MSBuild tasks be used instead of these properties.
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- This sections specifies references for the project. -->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.AddIn, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <!-- Visual Basic supports Importing namespaces (equivalent to using statements in C#).-->
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <!-- This section defines the user source files that are part of the
+       project.
+
+       Compile - Specifies a source file to compile.
+       EmbeddedResource - Specifies a .resx file for embedded resources.
+       None - Specifies a file that is not to be passed to the compiler (for instance,
+              a text file or XML file).
+       AppDesigner - Specifies the directory where the application properties files can
+                     be found.
+  -->
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScriptMain.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <!-- Include the default configuration information and metadata files for the add-in.
+         These files are copied to the build output directory when the project is
+         built, and the path to the configuration file is passed to add-in on the command
+         line when debugging.
+    -->
+  </ItemGroup>
+  <!-- Include the build rules for a VB project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A860303F-1F3F-4691-B57E-529FC101A107}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{C1B21C64-9E6F-4923-A89D-9F958503C1CE}" ApplicationType="usd" Language="vb" TemplatesPath="" DebugInfoExeName="#HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\InstallDir#\devenv.exe" />
+        <Host Name="SSIS_ScriptTask" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_ScriptTask</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem><ProjectItem Name="\my project\settings.settings">
+<![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)" GeneratedClassNamespace="$safeprojectname" GeneratedClassName="MySettings">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem><ProjectItem Name="\my project\resources.designer.vb">
+<![CDATA['------------------------------------------------------------------------------
+' <autogenerated>
+'     This code was generated by a tool.
+'
+'     Changes to this file may cause incorrect behavior and will be lost if
+'     the code is regenerated.
+' </autogenerated>
+'------------------------------------------------------------------------------
+
+Option Strict Off
+Option Explicit On
+
+
+Namespace My.Resources
+    
+    '''<summary>
+    '''   A strongly-typed resource class, for looking up localized strings, etc.
+    '''</summary>
+    'This class was auto-generated by the Strongly Typed Resource Builder
+    'class via a tool like ResGen or Visual Studio.NET.
+    'To add or remove a member, edit your .ResX file then rerun ResGen
+    'with the /str option, or rebuild your VS project.
+    Class MyResources
+        
+        Private Shared _resMgr As System.Resources.ResourceManager
+        
+        Private Shared _resCulture As System.Globalization.CultureInfo
+        
+        Friend Sub New()
+            MyBase.New
+        End Sub
+        
+        '''<summary>
+        '''   Returns the cached ResourceManager instance used by this class.
+        '''</summary>
+        <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        Public Shared ReadOnly Property ResourceManager() As System.Resources.ResourceManager
+            Get
+                If (_resMgr Is Nothing) Then
+                    Dim temp As System.Resources.ResourceManager = New System.Resources.ResourceManager("My.Resources.MyResources", GetType(MyResources).Assembly)
+                    _resMgr = temp
+                End If
+                Return _resMgr
+            End Get
+        End Property
+        
+        '''<summary>
+        '''   Overrides the current thread's CurrentUICulture property for all
+        '''   resource lookups using this strongly typed resource class.
+        '''</summary>
+        <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        Public Shared Property Culture() As System.Globalization.CultureInfo
+            Get
+                Return _resCulture
+            End Get
+            Set
+                _resCulture = value
+            End Set
+        End Property
+    End Class
+End Namespace]]></ProjectItem><ProjectItem Name="\scriptmain.vb">
+<![CDATA[' Microsoft SQL Server Integration Services Script Task
+' Write scripts using Microsoft Visual Basic
+' The ScriptMain class is the entry point of the Script Task.
+
+Imports System
+Imports System.Data
+Imports System.Math
+Imports Microsoft.SqlServer.Dts.Runtime
+
+<System.AddIn.AddIn("ScriptMain", Version:="1.0", Publisher:="", Description:="")> _
+<System.CLSCompliantAttribute(False)> _
+Partial Public Class ScriptMain
+	Inherits Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+
+	Enum ScriptResults
+		Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success
+		Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+	End Enum
+
+	' The execution engine calls this method when the task executes.
+	' To access the object model, use the Dts object. Connections, variables, events,
+	' and logging features are available as static members of the Dts class.
+	' Before returning from this method, set the value of Dts.TaskResult to indicate success or failure.
+	' 
+	' To open Code and Text Editor Help, press F1.
+	' To open Object Browser, press Ctrl+Alt+J.
+
+	Public Sub Main()
+		'
+		' Add your code here
+        '
+        Dim PaddedCO As String
+        Dim sQuery As String
+
+        PaddedCO = Right("00000" & Dts.Variables.Item("User::Company").Value, 5)
+
+        sQuery = "select * from proddta.f0902 "
+        sQuery = sQuery & "where gbfy = " + CType(Dts.Variables("varFY").Value, String) + " "
+        sQuery = sQuery & "and gbctry = 20 "
+        sQuery = sQuery & "and gbco = '" + PaddedCO + "' "
+        sQuery = sQuery & "and gblt = 'AA' "
+        Dts.Variables("varSQL").Value = sQuery
+        'InputBox("", "", sQuery)
+		Dts.TaskResult = ScriptResults.Success
+	End Sub
+
+End Class]]></ProjectItem><ProjectItem Name="\my project\resources.resx">
+<![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem><ProjectItem Name="\my project\settings.designer.vb">
+<![CDATA['------------------------------------------------------------------------------
+' <autogenerated>
+'     This code was generated by a tool.
+'
+'     Changes to this file may cause incorrect behavior and will be lost if
+'     the code is regenerated.
+' </autogenerated>
+'------------------------------------------------------------------------------
+
+Option Strict Off
+Option Explicit On
+
+
+
+Partial Friend NotInheritable Class MySettings
+    Inherits System.Configuration.ApplicationSettingsBase
+
+    Private Shared m_Value As MySettings
+
+    Private Shared m_SyncObject As Object = New Object
+
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Public Shared ReadOnly Property Value() As MySettings
+        Get
+            If (MySettings.m_Value Is Nothing) Then
+                System.Threading.Monitor.Enter(MySettings.m_SyncObject)
+                If (MySettings.m_Value Is Nothing) Then
+                    Try
+                        MySettings.m_Value = New MySettings
+                    Finally
+                        System.Threading.Monitor.Exit(MySettings.m_SyncObject)
+                    End Try
+                End If
+            End If
+            Return MySettings.m_Value
+        End Get
+    End Property
+End Class]]></ProjectItem><ProjectItem Name="\my project\assemblyinfo.vb">
+<![CDATA[Imports System
+Imports System.Reflection
+Imports System.Runtime.InteropServices
+
+' General Information about an assembly is controlled through the following 
+' set of attributes. Change these attribute values to modify the information
+' associated with an assembly.
+
+' Review the values of the assembly attributes
+
+<Assembly: AssemblyTitle("ScriptTask_b5c03a22d86a4d589edd5c9efde6fbde.vbproj")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("Intrawest")> 
+<Assembly: AssemblyProduct("ScriptTask_b5c03a22d86a4d589edd5c9efde6fbde.vbproj")> 
+<Assembly: AssemblyCopyright("Copyright @ Intrawest 2009")> 
+<Assembly: AssemblyTrademark("")> 
+<Assembly: CLSCompliant(True)> 
+
+<Assembly: ComVisible(False)> 
+
+'The following GUID is for the ID of the typelib if this project is exposed to COM
+<Assembly: Guid("6ae08f9f-7aef-4150-b2b5-9ea89e109d36")> 
+
+' Version information for an assembly consists of the following four values:
+'
+'      Major Version
+'      Minor Version 
+'      Build Number
+'      Revision
+'
+' You can specify all the values or you can default the Build and Revision Numbers 
+' by using the '*' as shown below:
+' <Assembly: AssemblyVersion("1.0.*")>
+
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> ]]></ProjectItem><BinaryItem Name="\bin\scripttask_b5c03a22d86a4d589edd5c9efde6fbde.vbproj.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDACW0M0sAAAAAAAAAAOAAAiELAQgAABwAAAAMAAAAAAAAbjsA
+AAAgAAAAQAAAAABAAAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAIAQIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAABQ7AABXAAAAAEAAAJgJAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAdBsAAAAgAAAAHAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAJgJAAAAQAAAAAoAAAAeAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAKAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAABQ
+OwAAAAAAAEgAAAACAAUALCQAAOgWAAABAAAAAAAAAFAgAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAALQAAADOyu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5S
+ZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFs
+LCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGlt
+ZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAAAeAigBAAAKKh4CKAQAAAoqpnMGAAAK
+gAEAAARzBwAACoACAAAEcwgAAAqAAwAABHMJAAAKgAQAAAQqAAATMAEACwAAAAEAABF+AQAABG8K
+AAAKKgATMAEACwAAAAIAABF+AgAABG8LAAAKKgATMAEACwAAAAMAABF+AwAABG8MAAAKKgATMAEA
+CwAAAAQAABF+BAAABG8NAAAKKgATMAIADQAAAAUAABECAygRAAAKKBIAAAoqAAAAEzABAAcAAAAG
+AAARAigTAAAKKgATMAEACwAAAAcAABHQBQAAAigUAAAKKgATMAEABwAAAAgAABECKBUAAAoqABMw
+AQAQAAAACQAAEQKMAQAAGy0GKAEAACsqAioTMAIAEAAAAAoAABEDEgD+FQIAABsGgQIAABsqHgIo
+FwAACioTMAIAKAAAAAsAABECexkAAApvGgAACgsHjAMAABstEigCAAArCwJ7GQAACgdvGwAACgcq
+SgIoFwAACgJzHAAACn0ZAAAKKgAeAigXAAAKKhMwAgAtAAAADAAAEX4GAAAELSByAQAAcNAHAAAC
+KBQAAApvHgAACnMfAAAKCweABgAABH4GAAAEKgAAABMwAQAGAAAADQAAEX4HAAAEKgAAHgKABwAA
+BCpCcxcAAAooEQAACoAJAAAEKgAAAB4CKCAAAAoqGzABAD8AAAAOAAARfggAAAQtMn4JAAAEKBEA
+AAooIQAACn4IAAAELRxzFgAABoAIAAAE3hB+CQAABCgRAAAKKCIAAArcfggAAAQqAAEMAAACAB0A
+DCkAEAAAAAEeAigkAAAKKhMwBAC4AAAADwAAEXIzAABwAm8lAAAKbyYAAApyPwAAcG8nAAAKbygA
+AAooKQAACigqAAAKGygrAAAKCnJbAABwCwdylQAAcAJvJQAACm8mAAAKcrEAAHBvJwAACm8oAAAK
+KCoAAApyvQAAcCgsAAAKCwdywQAAcCgtAAAKCwdy4wAAcAZy/QAAcCgsAAAKCwdyAwEAcCgtAAAK
+CwJvJQAACm8mAAAKciUBAHBvJwAACgdvLgAACgJvJQAAChZvLwAACipCU0pCAQABAAAAAAAMAAAA
+djIuMC41MDcyNwAAAAAFAGwAAADkBwAAI34AAFAIAACMCQAAI1N0cmluZ3MAAAAA3BEAADQBAAAj
+VVMAEBMAABAAAAAjR1VJRAAAACATAADIAwAAI0Jsb2IAAAAAAAAAAgAAAVcdogkJDwAAAPoBMwAW
+AAABAAAALQAAAAoAAAAMAAAAGQAAAAQAAAA7AAAAAgAAADUAAAAPAAAABAAAAAgAAAAJAAAACQAA
+AAEAAAAGAAAAAQAAAAMAAAADAAAAAgAAAAAAUgkBAAAAAAAKAHgBTgEKAKwBjgEGALwBtQEKABQC
+TgEGAJICtQEKABQD6gIGAEoDOQMGAHcDYgMOAN4DyQMSAF0ENAQGAH4EtQEOALEEmwQOAMoEmwQO
+APcE3wQGACEFDgUKAGAFOQUKAHgFEwAOAK0FkAUGAOIFwgUGAAAGtQEGACQGtQEKAD0GEwAGAIEG
+YgYGAKcGlQYGAM4GvQYGAOEGDgUSAP4GNAQWAFcHNwcWAG8HNwcKAIEHOQUKAJ0HOQUKAKkHEwAG
+ALcHtQEGANQHtQEaAPcH6gcGAE0IwgUGAG0IwgUGAIsIlQYGAKgIYgYGALYIlQYGANEIlQYGAOwI
+lQYGAAUJlQYGAB4JlQYGADsJlQYAAAAAAQAAAAAAAQABAAAAAAApADcABQABAAEAAAAAAG0ANwAJ
+AAEAAgAAARAAeAA3AA0AAQADAAUBAACCAAAADQAFAAgABQEAAJAAAAANAAUADwAAAAAAqwC3AA0A
+BgARAAABEAD3AAIBJQAIABUAAQAAADUBAgEpAAoAGAACAQAAQAEAAC0ACgAaADEA1wEgADEAAAIt
+ADEAIgI6ADEARwJHACEAIwOQABEAWgOdABEAgwOhABEA9gO/ABEA/gPDAAYGgwTZAFaAiwTcAFaA
+kwTcAAghAAAAAAYYiAETAAEAECEAAAAABhiIARMAAQAYIQAAAAARGMMBFwABAEQhAAAAABMIygEb
+AAEAXCEAAAAAEwjwASgAAQB0IQAAAAATCBkCNQABAIwhAAAAABMINwJCAAEApCEAAAAARgJ9AmMA
+AQDAIQAAAABGAoYCaAACANQhAAAAAIMAlwJsAAIA7CEAAAAARgKfAnEAAgAAIgAAAAARAKgCeAAC
+ABwiAAAAAAEAxgKAAAMAOCIAAAAABhiIARMABABAIgAAAAADCNoCiwAEAHQiAAAAAAYYiAETAAQA
+iCIAAAAAAxiIARMABACQIgAAAAAWCI8DpQAEAMwiAAAAABYIowOqAAQA4CIAAAAAFgivA68ABADo
+IgAAAAARGMMBFwAFAPwiAAAAAAYYiAETAAUABCMAAAAAFggLBMYABQBgIwAAAAAGGIgBEwAFAGgj
+AAAAAAYAeQQTAAUAAAABAIQCAAABAL0CAAABAL0CAAABALsDCQCIARMAYQCIAeoAcQCIAfkAEQCI
+ARMAeQCIARMAJACIARMALACIARMANACIARMAPACIARMAJADaAosALADaAosANADaAosAPADaAosA
+gQCIARMAiQCIARMAkQCIAUcBmQDxBZIBGQB9AmMAGQCGAmgAKQASBp8BGQCfAnEAqQAuBq8BGQCI
+ARMAsQCIAb8BRAAjA5AATAALBIsATABYBjwCTACIARMAuQCIAUkCKQCwBlQCOQCIAVkCSQCIARMA
+yQDWBnUCyQDcBnUC0QCIARMAUQCIARMAUQAQB38C2QBhB4QC4QB4B4kC6QALBI8C8QCLB5MC+QCf
+ApkCAQGxB54CCQG+B6QCCQG+B6wC6QBYBrIC2QDFB7cCEQGIAUkCGQGIAUcBIQGIAbcCKQGIARMA
+MQGIAUcBOQGIAUcBQQGIAUcBSQGIAUcBUQGIAUcBWQGIAUcBYQGIAUcBaQGIAUcBCAAsAOAACAAw
+AOUAKQCDAEwBLgDLAbgDLgCjASMDLgDDAYADLgDbAYADLgDTAU4CLgCTAfsCLgCbAQQDLgCrATAD
+LgDrAE4CLgCDAVoDLgCzAU4CLgC7AWADQAATAPAAQAArAOUAQwATAPAAQwAbAP8ASQCDAGoBYwAT
+APAAYwAbAP8AaQCDAF0BgAArAOUAgwBzAOUAgwB7AOUAgwAbAP8AiQCDAH4BoAArAOUAowATAPAA
+owDDAMcBwAArAOUAwwDrAE4CwwATAPAAyQATAGwC4AArAOUA6QATAGwCAAErAOUAAAETAPAACQEb
+AeUAIAErAOUAIAETAPAAIwGLAcECIwGDAU4CQAErAOUAQAETAPAAYAErAOUAYAETAPAAgAErAOUA
+oAErAOUAwAErAOUAwAETAPAA4AErAOUAAAITAPAAAAIrAOUAMwE4AT0BQgGXAZsBpgGrAboBugFC
+AmACZwJ6ArwCBAABAAYABQAHAAYACAAIAAAArAFPAAAAZQJUAAAAFAJZAAAAcQJeAAAALQOYAAAA
+SgO1AAAAwQO6AAAAuwPLAAIABAADAAIABQAFAAIABgAHAAIABwAJAAIADwALAAIAEgANAAIAEwAP
+AAEAFAAPAAIAFwARAHUAdQCIABcBHgElASwBKQIwAgSAAAABAAAAAAAAAAAAAAAAAAIBAAACAAAA
+AAAAAAAAAAABAAoAAAAAAAgAAAAAAAAAAAAAAAoAEwAAAAAAAgAAAAAAAAAAAAAAAQC1AQAAAAAK
+AAAAAAAAAAAAAADQABUEAAAAAAoAAAAAAAAAAAAAANAAGAcAAAAAAwAFAAAAAAAAAAAAAQDqBwAA
+AAAAAAAAAQAAAAYIAAAFAAQABgAEAAoACQAAABAADAC7AgAAEAAZALsCAAAAABsAuwItALUBLQA3
+AgAAADxNb2R1bGU+AG1zY29ybGliAE1pY3Jvc29mdC5WaXN1YWxCYXNpYwBNeUFwcGxpY2F0aW9u
+AFNjcmlwdFRhc2tfYjVjMDNhMjJkODZhNGQ1ODllZGQ1YzllZmRlNmZiZGUudmJwcm9qLk15AE15
+Q29tcHV0ZXIATXlQcm9qZWN0AE15V2ViU2VydmljZXMAVGhyZWFkU2FmZU9iamVjdFByb3ZpZGVy
+YDEATXlSZXNvdXJjZXMAU2NyaXB0VGFza19iNWMwM2EyMmQ4NmE0ZDU4OWVkZDVjOWVmZGU2ZmJk
+ZS52YnByb2ouTXkuUmVzb3VyY2VzAE15U2V0dGluZ3MAU2NyaXB0VGFza19iNWMwM2EyMmQ4NmE0
+ZDU4OWVkZDVjOWVmZGU2ZmJkZS52YnByb2oAU2NyaXB0TWFpbgBTY3JpcHRSZXN1bHRzAE1pY3Jv
+c29mdC5WaXN1YWxCYXNpYy5BcHBsaWNhdGlvblNlcnZpY2VzAEFwcGxpY2F0aW9uQmFzZQAuY3Rv
+cgBNaWNyb3NvZnQuVmlzdWFsQmFzaWMuRGV2aWNlcwBDb21wdXRlcgBTeXN0ZW0AT2JqZWN0AC5j
+Y3RvcgBnZXRfQ29tcHV0ZXIAbV9Db21wdXRlck9iamVjdFByb3ZpZGVyAGdldF9BcHBsaWNhdGlv
+bgBtX0FwcE9iamVjdFByb3ZpZGVyAFVzZXIAZ2V0X1VzZXIAbV9Vc2VyT2JqZWN0UHJvdmlkZXIA
+Z2V0X1dlYlNlcnZpY2VzAG1fTXlXZWJTZXJ2aWNlc09iamVjdFByb3ZpZGVyAEFwcGxpY2F0aW9u
+AFdlYlNlcnZpY2VzAEVxdWFscwBvAEdldEhhc2hDb2RlAFR5cGUAR2V0VHlwZQBUb1N0cmluZwBD
+cmVhdGVfX0luc3RhbmNlX18AVABpbnN0YW5jZQBEaXNwb3NlX19JbnN0YW5jZV9fAGdldF9HZXRJ
+bnN0YW5jZQBNaWNyb3NvZnQuVmlzdWFsQmFzaWMuTXlTZXJ2aWNlcy5JbnRlcm5hbABDb250ZXh0
+VmFsdWVgMQBtX0NvbnRleHQAR2V0SW5zdGFuY2UAU3lzdGVtLlJlc291cmNlcwBSZXNvdXJjZU1h
+bmFnZXIAX3Jlc01ncgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBDdWx0dXJlSW5mbwBfcmVzQ3VsdHVy
+ZQBnZXRfUmVzb3VyY2VNYW5hZ2VyAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAFZhbHVlAEN1bHR1
+cmUAU3lzdGVtLkNvbmZpZ3VyYXRpb24AQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UAbV9WYWx1ZQBt
+X1N5bmNPYmplY3QAZ2V0X1ZhbHVlAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuU2NyaXB0VGFzawBNaWNy
+b3NvZnQuU3FsU2VydmVyLkR0cy5UYXNrcy5TY3JpcHRUYXNrAFZTVEFSVFNjcmlwdE9iamVjdE1v
+ZGVsQmFzZQBNYWluAEVudW0AdmFsdWVfXwBTdWNjZXNzAEZhaWx1cmUAU3lzdGVtLkNvbXBvbmVu
+dE1vZGVsAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBTeXN0
+ZW0uQ29kZURvbS5Db21waWxlcgBHZW5lcmF0ZWRDb2RlQXR0cmlidXRlAFN5c3RlbS5EaWFnbm9z
+dGljcwBEZWJ1Z2dlckhpZGRlbkF0dHJpYnV0ZQBNaWNyb3NvZnQuVmlzdWFsQmFzaWMuQ29tcGls
+ZXJTZXJ2aWNlcwBTdGFuZGFyZE1vZHVsZUF0dHJpYnV0ZQBIaWRlTW9kdWxlTmFtZUF0dHJpYnV0
+ZQBTeXN0ZW0uQ29tcG9uZW50TW9kZWwuRGVzaWduAEhlbHBLZXl3b3JkQXR0cmlidXRlAFN5c3Rl
+bS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAUnVudGltZUhlbHBlcnMAR2V0T2JqZWN0VmFsdWUA
+UnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUAQWN0aXZhdG9yAENyZWF0ZUluc3Rh
+bmNlAE15R3JvdXBDb2xsZWN0aW9uQXR0cmlidXRlAHNldF9WYWx1ZQBTeXN0ZW0uUnVudGltZS5J
+bnRlcm9wU2VydmljZXMAQ29tVmlzaWJsZUF0dHJpYnV0ZQBTeXN0ZW0uUmVmbGVjdGlvbgBBc3Nl
+bWJseQBnZXRfQXNzZW1ibHkAU3lzdGVtLlRocmVhZGluZwBNb25pdG9yAEVudGVyAEV4aXQARGVi
+dWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBTY3JpcHRPYmplY3RNb2RlbABnZXRfRHRzAE1pY3Jv
+c29mdC5TcWxTZXJ2ZXIuTWFuYWdlZERUUwBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5SdW50aW1l
+AFZhcmlhYmxlcwBnZXRfVmFyaWFibGVzAFZhcmlhYmxlAGdldF9JdGVtAE9wZXJhdG9ycwBDb25j
+YXRlbmF0ZU9iamVjdABDb252ZXJzaW9ucwBTdHJpbmdzAFJpZ2h0AFN0cmluZwBDb25jYXQAc2V0
+X1Rhc2tSZXN1bHQAQ0xTQ29tcGxpYW50QXR0cmlidXRlAFN5c3RlbS5BZGRJbgBBZGRJbkF0dHJp
+YnV0ZQBTY3JpcHRUYXNrX2I1YzAzYTIyZDg2YTRkNTg5ZWRkNWM5ZWZkZTZmYmRlLnZicHJvai5S
+ZXNvdXJjZXMucmVzb3VyY2VzAENvbXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAUnVudGlt
+ZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAQXNzZW1ibHlGaWxlVmVyc2lvbkF0dHJpYnV0ZQBHdWlk
+QXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAEFzc2VtYmx5Q29weXJpZ2h0QXR0
+cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUA
+QXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAFNjcmlw
+dFRhc2tfYjVjMDNhMjJkODZhNGQ1ODllZGQ1YzllZmRlNmZiZGUudmJwcm9qLmRsbAAAAAAAMU0A
+eQAuAFIAZQBzAG8AdQByAGMAZQBzAC4ATQB5AFIAZQBzAG8AdQByAGMAZQBzAAALMAAwADAAMAAw
+AAAbVQBzAGUAcgA6ADoAQwBvAG0AcABhAG4AeQAAOXMAZQBsAGUAYwB0ACAAKgAgAGYAcgBvAG0A
+IABwAHIAbwBkAGQAdABhAC4AZgAwADkAMAAyACAAABt3AGgAZQByAGUAIABnAGIAZgB5ACAAPQAg
+AAALdgBhAHIARgBZAAADIAAAIWEAbgBkACAAZwBiAGMAdAByAHkAIAA9ACAAMgAwACAAABlhAG4A
+ZAAgAGcAYgBjAG8AIAA9ACAAJwABBScAIAABIWEAbgBkACAAZwBiAGwAdAAgAD0AIAAnAEEAQQAn
+ACAAAQ12AGEAcgBTAFEATAAAAO2Cs0y4FgRBgcExw5nyRq0ACLd6XFYZNOCJCLA/X38R1Qo6AyAA
+AQMAAAEEAAASDAcGFRIYARIMBAAAEggHBhUSGAESCAQAABIRBwYVEhgBEhEEAAASFAcGFRIYARIU
+BAgAEgwECAASCAQIABIRBAgAEhQEIAECHAMgAAgEIAASFQMgAA4CHgAHEAEBHgAeAAcwAQEBEB4A
+AhMABCAAEwAHBhUSGQETAAQoABMAAwYSHQMGEiEEAAASHQQAABIhBQABARIhBAgAEh0ECAASIQMG
+EiACBhwEAAASIAQIABIgCImEXc2AgMyRAgYIAwYRKAQAAAAABAEAAAAFIAEBETUIAQABAAAAAAAF
+IAIBDg4XAQAKTXlUZW1wbGF0ZQc4LjAuMC4wAAAGFRIYARIMBhUSGAESCAYVEhgBEhEGFRIYARIU
+BAcBEgwEBwESCAQHARIRBAcBEhQEIAEBDhABAAtNeS5Db21wdXRlcgAADAEAB015LlVzZXIAABMB
+AA5NeS5BcHBsaWNhdGlvbgAAEwEADk15LldlYlNlcnZpY2VzAAAEAAEcHAMHAQIDBwEIBgABEhUR
+UQQHARIVAwcBDgUQAQAeAAQKAR4ABAcBHgAHIAQBDg4ODmEBADRTeXN0ZW0uV2ViLlNlcnZpY2Vz
+LlByb3RvY29scy5Tb2FwSHR0cENsaWVudFByb3RvY29sEkNyZWF0ZV9fSW5zdGFuY2VfXxNEaXNw
+b3NlX19JbnN0YW5jZV9fAAAABhUSGAETAAYVEhkBEwAECgETAAUgAQETAAYHAhMAEwAEIAEBAgUB
+AAAAAAQgABJhBiACAQ4SYQYHAhIdEh0EBwESIQgBAAIAAAAAAAQAAQEcBAcBEiAEIAASbQQgABJx
+BSABEnUcAyAAHAUAAhwcHAQAAQ4cBQACDg4IBwAEDg4ODg4FAAIODg4EIAEBHAQgAQEIBAcCDg45
+AQAKU2NyaXB0TWFpbgMAVA4HVmVyc2lvbgMxLjBUDglQdWJsaXNoZXIAVA4LRGVzY3JpcHRpb24A
+CAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQwBAAcxLjAuMC4wAAApAQAk
+NmFlMDhmOWYtN2FlZi00MTUwLWIyYjUtOWVhODllMTA5ZDM2AAAFAQABAAAfAQAaQ29weXJpZ2h0
+IEAgSW50cmF3ZXN0IDIwMDkAADcBADJTY3JpcHRUYXNrX2I1YzAzYTIyZDg2YTRkNTg5ZWRkNWM5
+ZWZkZTZmYmRlLnZicHJvagAADgEACUludHJhd2VzdAAAADw7AAAAAAAAAAAAAF47AAAAIAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAABQOwAAAAAAAAAAAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3Jl
+ZS5kbGwAAAAAAP8lACBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD
+AAMAAAAoAACADgAAAEgAAIAQAAAAYAAAgAAAAAAAAAAAAAAAAAAAAgACAAAAeAAAgAMAAACQAACA
+AAAAAAAAAAAAAAAAAAABAAB/AACoAACAAAAAAAAAAAAAAAAAAAABAAEAAADAAACAAAAAAAAAAAAA
+AAAAAAABAAAAAADYAAAAAAAAAAAAAAAAAAAAAAABAAAAAADoAAAAAAAAAAAAAAAAAAAAAAABAAAA
+AAD4AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAIAQAAYEUAAOgCAAAAAAAAAAAAAEhIAAAoAQAAAAAA
+AAAAAABwSQAAIgAAAAAAAAAAAAAAGEEAAEgEAAAAAAAAAAAAAEgENAAAAFYAUwBfAFYARQBSAFMA
+SQBPAE4AXwBJAE4ARgBPAAAAAAC9BO/+AAABAAAAAQAAAAAAAAABAAAAAAA/AAAAAAAAAAQAAAAC
+AAAAAAAAAAAAAAAAAAAARAAAAAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIA
+YQBuAHMAbABhAHQAaQBvAG4AAAAAAAAAsASoAwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBm
+AG8AAACEAwAAAQAwADAAMAAwADAANABiADAAAAA0AAoAAQBDAG8AbQBwAGEAbgB5AE4AYQBtAGUA
+AAAAAEkAbgB0AHIAYQB3AGUAcwB0AAAAkAAzAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBv
+AG4AAAAAAFMAYwByAGkAcAB0AFQAYQBzAGsAXwBiADUAYwAwADMAYQAyADIAZAA4ADYAYQA0AGQA
+NQA4ADkAZQBkAGQANQBjADkAZQBmAGQAZQA2AGYAYgBkAGUALgB2AGIAcAByAG8AagAAAAAAMAAI
+AAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAALgAwAAAAkAA3AAEASQBuAHQA
+ZQByAG4AYQBsAE4AYQBtAGUAAABTAGMAcgBpAHAAdABUAGEAcwBrAF8AYgA1AGMAMAAzAGEAMgAy
+AGQAOAA2AGEANABkADUAOAA5AGUAZABkADUAYwA5AGUAZgBkAGUANgBmAGIAZABlAC4AdgBiAHAA
+cgBvAGoALgBkAGwAbAAAAAAAXAAbAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBv
+AHAAeQByAGkAZwBoAHQAIABAACAASQBuAHQAcgBhAHcAZQBzAHQAIAAyADAAMAA5AAAAAACYADcA
+AQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBjAHIAaQBwAHQAVABhAHMAawBf
+AGIANQBjADAAMwBhADIAMgBkADgANgBhADQAZAA1ADgAOQBlAGQAZAA1AGMAOQBlAGYAZABlADYA
+ZgBiAGQAZQAuAHYAYgBwAHIAbwBqAC4AZABsAGwAAAAAAIgAMwABAFAAcgBvAGQAdQBjAHQATgBh
+AG0AZQAAAAAAUwBjAHIAaQBwAHQAVABhAHMAawBfAGIANQBjADAAMwBhADIAMgBkADgANgBhADQA
+ZAA1ADgAOQBlAGQAZAA1AGMAOQBlAGYAZABlADYAZgBiAGQAZQAuAHYAYgBwAHIAbwBqAAAAAAA0
+AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAIAAEA
+QQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAoAAAAIAAA
+AEAAAAABAAQAAAAAAIACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAA
+gIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd3d3d3d3d3d3
+d3d3d3dwBEREREREREREREREREREcAT/////////////////9HAE//////////////////RwBP//
+///////////////0cAT/////////////////9HAE//////////////////RwBP//////////////
+///0cAT/////////////////9HAE//////////////////RwBP/////////////////0cAT/////
+////////////9HAE//////////////////RwBP/////////////////0cAT/////////////////
+9HAE//////////////////RwBP/////////////////0cAT/////////////////9HAE////////
+//////////RwBP/////////////////0cASIiIiIiIiIiIiIiIiIhHAERERERERERERERERERERw
+BExMTExMTExMTE7Ozkl0cATMzMzMzMzMzMzMzMzMxAAAREREREREREREREREREAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////////8AA
+AAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAA
+AYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAA8AAAAf///////////////8oAAAA
+EAAAACAAAAABAAQAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACA
+AIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAB3d3d3d3
+d3dERERERERER0////////hHT///////+EdP///////4R0////////hHT///////+EdP///////4
+R0////////hHT///////+EdIiIiIiIiIR0zMzMzMzMxHxERERERERMAAAAAAAAAAAAAAAAAAAAAA
+//8AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAD/
+/wAA//8AAAAAAQACACAgEAABAAQA6AIAAAIAEBAQAAEABAAoAQAAAwAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAcDsAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem></ScriptProject></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="SSIS.Pipeline.2">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server v9; (C) 2004 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Load F0902</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{AFF7B905-6052-45BC-81F6-2E4E3209D70E}</DTS:Property>
+<DTS:Property DTS:Name="Description">Data Flow Task</DTS:Property>
+<DTS:Property DTS:Name="CreationName">SSIS.Pipeline.2</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><pipeline id="0" name="pipelineXml" description="pipelineXml" defaultBufferMaxRows="10000" engineThreads="5" defaultBufferSize="10485760" BLOBTempStoragePath="" bufferTempStoragePath="" runInOptimizedMode="true">
+<components>
+<component id="20427" name="OLE DB Source" componentClassID="{BCEFE59B-6819-47F7-A125-63753B33ABB7}" description="OLE DB Source" localeId="-1" usesDispositions="true" validateExternalMetadata="True" version="7" pipelineVersion="0" contactInfo="OLE DB Source;Microsoft Corporation;Microsoft SqlServer v9; (C) 2005 Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7">
+<properties>
+<property id="20428" name="CommandTimeout" dataType="System.Int32" state="default" isArray="false" description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">0</property>
+<property id="20429" name="OpenRowset" dataType="System.String" state="default" isArray="false" description="Specifies the name of the database object used to open a rowset." typeConverter="" UITypeEditor="" containsID="false" expressionType="None"></property>
+<property id="20430" name="OpenRowsetVariable" dataType="System.String" state="default" isArray="false" description="Specifies the variable that contains the name of the database object used to open a rowset." typeConverter="" UITypeEditor="" containsID="false" expressionType="None"></property>
+<property id="20431" name="SqlCommand" dataType="System.String" state="default" isArray="false" description="The SQL command to be executed." typeConverter="" UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" containsID="false" expressionType="None"></property>
+<property id="20432" name="SqlCommandVariable" dataType="System.String" state="default" isArray="false" description="The variable that contains the SQL command to be executed." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">User::varSQL</property>
+<property id="20433" name="DefaultCodePage" dataType="System.Int32" state="default" isArray="false" description="Specifies the column code page to use when code page information is unavailable from the data source." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">1252</property>
+<property id="20434" name="AlwaysUseDefaultCodePage" dataType="System.Boolean" state="default" isArray="false" description="Forces the use of the DefaultCodePage property value when describing character data." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">true</property>
+<property id="20435" name="AccessMode" dataType="System.Int32" state="default" isArray="false" description="Specifies the mode used to access the database." typeConverter="AccessMode" UITypeEditor="" containsID="false" expressionType="None">3</property>
+<property id="20441" name="ParameterMapping" dataType="System.String" state="default" isArray="false" description="The mappings between the parameters in the SQL command and variables." typeConverter="" UITypeEditor="" containsID="false" expressionType="None"></property></properties>
+<connections>
+<connection id="20436" name="OleDbConnection" description="The OLE DB runtime connection used to access the database." connectionManagerID="{9FA02DC8-5CAA-4364-A875-3A80674BF6DF}"/></connections>
+<outputs>
+<output id="20437" name="OLE DB Source Output" description="" exclusionGroup="0" synchronousInputId="0" deleteOutputOnPathDetached="false" hasSideEffects="false" dangling="false" isErrorOut="false" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="20473" name="GBAID" description="" lineageId="20473" precision="0" scale="0" length="8" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20472" mappedColumnId="0"/>
+<outputColumn id="20476" name="GBCTRY" description="" lineageId="20476" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20475" mappedColumnId="0"/>
+<outputColumn id="20479" name="GBFY" description="" lineageId="20479" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20478" mappedColumnId="0"/>
+<outputColumn id="20482" name="GBFQ" description="" lineageId="20482" precision="0" scale="0" length="4" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20481" mappedColumnId="0"/>
+<outputColumn id="20485" name="GBLT" description="" lineageId="20485" precision="0" scale="0" length="2" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20484" mappedColumnId="0"/>
+<outputColumn id="20488" name="GBSBL" description="" lineageId="20488" precision="0" scale="0" length="8" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20487" mappedColumnId="0"/>
+<outputColumn id="20491" name="GBCO" description="" lineageId="20491" precision="0" scale="0" length="5" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20490" mappedColumnId="0"/>
+<outputColumn id="20494" name="GBAPYC" description="" lineageId="20494" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20493" mappedColumnId="0"/>
+<outputColumn id="20497" name="GBAN01" description="" lineageId="20497" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20496" mappedColumnId="0"/>
+<outputColumn id="20500" name="GBAN02" description="" lineageId="20500" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20499" mappedColumnId="0"/>
+<outputColumn id="20503" name="GBAN03" description="" lineageId="20503" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20502" mappedColumnId="0"/>
+<outputColumn id="20506" name="GBAN04" description="" lineageId="20506" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20505" mappedColumnId="0"/>
+<outputColumn id="20509" name="GBAN05" description="" lineageId="20509" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20508" mappedColumnId="0"/>
+<outputColumn id="20512" name="GBAN06" description="" lineageId="20512" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20511" mappedColumnId="0"/>
+<outputColumn id="20515" name="GBAN07" description="" lineageId="20515" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20514" mappedColumnId="0"/>
+<outputColumn id="20518" name="GBAN08" description="" lineageId="20518" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20517" mappedColumnId="0"/>
+<outputColumn id="20521" name="GBAN09" description="" lineageId="20521" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20520" mappedColumnId="0"/>
+<outputColumn id="20524" name="GBAN10" description="" lineageId="20524" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20523" mappedColumnId="0"/>
+<outputColumn id="20527" name="GBAN11" description="" lineageId="20527" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20526" mappedColumnId="0"/>
+<outputColumn id="20530" name="GBAN12" description="" lineageId="20530" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20529" mappedColumnId="0"/>
+<outputColumn id="20533" name="GBAN13" description="" lineageId="20533" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20532" mappedColumnId="0"/>
+<outputColumn id="20536" name="GBAN14" description="" lineageId="20536" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20535" mappedColumnId="0"/>
+<outputColumn id="20539" name="GBAPYN" description="" lineageId="20539" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20538" mappedColumnId="0"/>
+<outputColumn id="20542" name="GBAWTD" description="" lineageId="20542" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20541" mappedColumnId="0"/>
+<outputColumn id="20545" name="GBBORG" description="" lineageId="20545" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20544" mappedColumnId="0"/>
+<outputColumn id="20548" name="GBPOU" description="" lineageId="20548" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20547" mappedColumnId="0"/>
+<outputColumn id="20551" name="GBPC" description="" lineageId="20551" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20550" mappedColumnId="0"/>
+<outputColumn id="20554" name="GBTKER" description="" lineageId="20554" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20553" mappedColumnId="0"/>
+<outputColumn id="20557" name="GBBREQ" description="" lineageId="20557" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20556" mappedColumnId="0"/>
+<outputColumn id="20560" name="GBBAPR" description="" lineageId="20560" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20559" mappedColumnId="0"/>
+<outputColumn id="20563" name="GBMCU" description="" lineageId="20563" precision="0" scale="0" length="12" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20562" mappedColumnId="0"/>
+<outputColumn id="20566" name="GBOBJ" description="" lineageId="20566" precision="0" scale="0" length="6" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20565" mappedColumnId="0"/>
+<outputColumn id="20569" name="GBSUB" description="" lineageId="20569" precision="0" scale="0" length="8" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20568" mappedColumnId="0"/>
+<outputColumn id="20572" name="GBUSER" description="" lineageId="20572" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20571" mappedColumnId="0"/>
+<outputColumn id="20575" name="GBPID" description="" lineageId="20575" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20574" mappedColumnId="0"/>
+<outputColumn id="20578" name="GBUPMJ" description="" lineageId="20578" precision="6" scale="0" length="0" dataType="numeric" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20577" mappedColumnId="0"/>
+<outputColumn id="20581" name="GBJOBN" description="" lineageId="20581" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20580" mappedColumnId="0"/>
+<outputColumn id="20584" name="GBSBLT" description="" lineageId="20584" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20583" mappedColumnId="0"/>
+<outputColumn id="20587" name="GBUPMT" description="" lineageId="20587" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20586" mappedColumnId="0"/>
+<outputColumn id="20590" name="GBCRCD" description="" lineageId="20590" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20589" mappedColumnId="0"/>
+<outputColumn id="20593" name="GBCRCX" description="" lineageId="20593" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="20592" mappedColumnId="0"/></outputColumns><externalMetadataColumns isUsed="True">
+<externalMetadataColumn id="20472" name="GBAID" description="" precision="0" scale="0" length="8" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20475" name="GBCTRY" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20478" name="GBFY" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20481" name="GBFQ" description="" precision="0" scale="0" length="4" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20484" name="GBLT" description="" precision="0" scale="0" length="2" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20487" name="GBSBL" description="" precision="0" scale="0" length="8" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20490" name="GBCO" description="" precision="0" scale="0" length="5" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20493" name="GBAPYC" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20496" name="GBAN01" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20499" name="GBAN02" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20502" name="GBAN03" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20505" name="GBAN04" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20508" name="GBAN05" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20511" name="GBAN06" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20514" name="GBAN07" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20517" name="GBAN08" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20520" name="GBAN09" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20523" name="GBAN10" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20526" name="GBAN11" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20529" name="GBAN12" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20532" name="GBAN13" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20535" name="GBAN14" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20538" name="GBAPYN" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20541" name="GBAWTD" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20544" name="GBBORG" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20547" name="GBPOU" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20550" name="GBPC" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20553" name="GBTKER" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20556" name="GBBREQ" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20559" name="GBBAPR" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20562" name="GBMCU" description="" precision="0" scale="0" length="12" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20565" name="GBOBJ" description="" precision="0" scale="0" length="6" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20568" name="GBSUB" description="" precision="0" scale="0" length="8" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20571" name="GBUSER" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20574" name="GBPID" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20577" name="GBUPMJ" description="" precision="6" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20580" name="GBJOBN" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20583" name="GBSBLT" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20586" name="GBUPMT" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20589" name="GBCRCD" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20592" name="GBCRCX" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/></externalMetadataColumns></output>
+<output id="20438" name="OLE DB Source Error Output" description="" exclusionGroup="0" synchronousInputId="0" deleteOutputOnPathDetached="false" hasSideEffects="false" dangling="false" isErrorOut="true" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="20474" name="GBAID" description="" lineageId="20474" precision="0" scale="0" length="8" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20477" name="GBCTRY" description="" lineageId="20477" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20480" name="GBFY" description="" lineageId="20480" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20483" name="GBFQ" description="" lineageId="20483" precision="0" scale="0" length="4" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20486" name="GBLT" description="" lineageId="20486" precision="0" scale="0" length="2" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20489" name="GBSBL" description="" lineageId="20489" precision="0" scale="0" length="8" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20492" name="GBCO" description="" lineageId="20492" precision="0" scale="0" length="5" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20495" name="GBAPYC" description="" lineageId="20495" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20498" name="GBAN01" description="" lineageId="20498" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20501" name="GBAN02" description="" lineageId="20501" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20504" name="GBAN03" description="" lineageId="20504" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20507" name="GBAN04" description="" lineageId="20507" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20510" name="GBAN05" description="" lineageId="20510" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20513" name="GBAN06" description="" lineageId="20513" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20516" name="GBAN07" description="" lineageId="20516" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20519" name="GBAN08" description="" lineageId="20519" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20522" name="GBAN09" description="" lineageId="20522" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20525" name="GBAN10" description="" lineageId="20525" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20528" name="GBAN11" description="" lineageId="20528" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20531" name="GBAN12" description="" lineageId="20531" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20534" name="GBAN13" description="" lineageId="20534" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20537" name="GBAN14" description="" lineageId="20537" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20540" name="GBAPYN" description="" lineageId="20540" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20543" name="GBAWTD" description="" lineageId="20543" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20546" name="GBBORG" description="" lineageId="20546" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20549" name="GBPOU" description="" lineageId="20549" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20552" name="GBPC" description="" lineageId="20552" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20555" name="GBTKER" description="" lineageId="20555" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20558" name="GBBREQ" description="" lineageId="20558" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20561" name="GBBAPR" description="" lineageId="20561" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20564" name="GBMCU" description="" lineageId="20564" precision="0" scale="0" length="12" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20567" name="GBOBJ" description="" lineageId="20567" precision="0" scale="0" length="6" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20570" name="GBSUB" description="" lineageId="20570" precision="0" scale="0" length="8" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20573" name="GBUSER" description="" lineageId="20573" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20576" name="GBPID" description="" lineageId="20576" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20579" name="GBUPMJ" description="" lineageId="20579" precision="6" scale="0" length="0" dataType="numeric" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20582" name="GBJOBN" description="" lineageId="20582" precision="0" scale="0" length="10" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20585" name="GBSBLT" description="" lineageId="20585" precision="0" scale="0" length="1" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20588" name="GBUPMT" description="" lineageId="20588" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20591" name="GBCRCD" description="" lineageId="20591" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20594" name="GBCRCX" description="" lineageId="20594" precision="0" scale="0" length="3" dataType="str" codePage="1252" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20439" name="ErrorCode" description="" lineageId="20439" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="1" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="20440" name="ErrorColumn" description="" lineageId="20440" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="2" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/></outputColumns><externalMetadataColumns isUsed="False"/></output>
+</outputs>
+</component>
+<component id="20599" name="Flat File Destination" componentClassID="{D658C424-8CF0-441C-B3C4-955E183B7FBA}" description="Flat File Destination" localeId="1033" usesDispositions="false" validateExternalMetadata="True" version="0" pipelineVersion="0" contactInfo="Flat File Destination;Microsoft Corporation;Microsoft SqlServer v9; (C) 2005 Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0">
+<properties>
+<property id="20602" name="Overwrite" dataType="System.Boolean" state="default" isArray="false" description="Specifies whether the data will overwrite or append to the destination file." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">true</property>
+<property id="20603" name="Header" dataType="System.Null" state="default" isArray="false" description="Specifies the text to write to the destination file before any data is written." typeConverter="" UITypeEditor="" containsID="false" expressionType="Notify"/></properties>
+<connections>
+<connection id="20601" name="FlatFileConnection" description="" connectionManagerID="{D287CEF2-9CD8-493C-800B-21E67174074E}"/></connections>
+<inputs>
+<input id="20600" name="Flat File Destination Input" description="" hasSideEffects="true" dangling="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><inputColumns>
+<inputColumn id="20651" name="" description="" lineageId="20473" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20610" mappedColumnId="0"/>
+<inputColumn id="20652" name="" description="" lineageId="20476" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20611" mappedColumnId="0"/>
+<inputColumn id="20653" name="" description="" lineageId="20479" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20612" mappedColumnId="0"/>
+<inputColumn id="20654" name="" description="" lineageId="20482" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20613" mappedColumnId="0"/>
+<inputColumn id="20655" name="" description="" lineageId="20485" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20614" mappedColumnId="0"/>
+<inputColumn id="20656" name="" description="" lineageId="20488" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20615" mappedColumnId="0"/>
+<inputColumn id="20657" name="" description="" lineageId="20491" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20616" mappedColumnId="0"/>
+<inputColumn id="20658" name="" description="" lineageId="20494" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20617" mappedColumnId="0"/>
+<inputColumn id="20659" name="" description="" lineageId="20497" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20618" mappedColumnId="0"/>
+<inputColumn id="20660" name="" description="" lineageId="20500" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20619" mappedColumnId="0"/>
+<inputColumn id="20661" name="" description="" lineageId="20503" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20620" mappedColumnId="0"/>
+<inputColumn id="20662" name="" description="" lineageId="20506" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20621" mappedColumnId="0"/>
+<inputColumn id="20663" name="" description="" lineageId="20509" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20622" mappedColumnId="0"/>
+<inputColumn id="20664" name="" description="" lineageId="20512" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20623" mappedColumnId="0"/>
+<inputColumn id="20665" name="" description="" lineageId="20515" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20624" mappedColumnId="0"/>
+<inputColumn id="20666" name="" description="" lineageId="20518" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20625" mappedColumnId="0"/>
+<inputColumn id="20667" name="" description="" lineageId="20521" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20626" mappedColumnId="0"/>
+<inputColumn id="20668" name="" description="" lineageId="20524" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20627" mappedColumnId="0"/>
+<inputColumn id="20669" name="" description="" lineageId="20527" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20628" mappedColumnId="0"/>
+<inputColumn id="20670" name="" description="" lineageId="20530" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20629" mappedColumnId="0"/>
+<inputColumn id="20671" name="" description="" lineageId="20533" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20630" mappedColumnId="0"/>
+<inputColumn id="20672" name="" description="" lineageId="20536" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20631" mappedColumnId="0"/>
+<inputColumn id="20673" name="" description="" lineageId="20539" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20632" mappedColumnId="0"/>
+<inputColumn id="20674" name="" description="" lineageId="20542" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20633" mappedColumnId="0"/>
+<inputColumn id="20675" name="" description="" lineageId="20545" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20634" mappedColumnId="0"/>
+<inputColumn id="20676" name="" description="" lineageId="20548" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20635" mappedColumnId="0"/>
+<inputColumn id="20677" name="" description="" lineageId="20551" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20636" mappedColumnId="0"/>
+<inputColumn id="20678" name="" description="" lineageId="20554" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20637" mappedColumnId="0"/>
+<inputColumn id="20679" name="" description="" lineageId="20557" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20638" mappedColumnId="0"/>
+<inputColumn id="20680" name="" description="" lineageId="20560" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20639" mappedColumnId="0"/>
+<inputColumn id="20681" name="" description="" lineageId="20563" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20640" mappedColumnId="0"/>
+<inputColumn id="20682" name="" description="" lineageId="20566" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20641" mappedColumnId="0"/>
+<inputColumn id="20683" name="" description="" lineageId="20569" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20642" mappedColumnId="0"/>
+<inputColumn id="20684" name="" description="" lineageId="20572" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20643" mappedColumnId="0"/>
+<inputColumn id="20685" name="" description="" lineageId="20575" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20644" mappedColumnId="0"/>
+<inputColumn id="20686" name="" description="" lineageId="20578" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20645" mappedColumnId="0"/>
+<inputColumn id="20687" name="" description="" lineageId="20581" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20646" mappedColumnId="0"/>
+<inputColumn id="20688" name="" description="" lineageId="20584" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20647" mappedColumnId="0"/>
+<inputColumn id="20689" name="" description="" lineageId="20587" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20648" mappedColumnId="0"/>
+<inputColumn id="20690" name="" description="" lineageId="20590" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20649" mappedColumnId="0"/>
+<inputColumn id="20691" name="" description="" lineageId="20593" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="20650" mappedColumnId="0"/>
+</inputColumns><externalMetadataColumns isUsed="True">
+<externalMetadataColumn id="20610" name="GBAID" description="" precision="0" scale="0" length="8" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20611" name="GBCTRY" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20612" name="GBFY" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20613" name="GBFQ" description="" precision="0" scale="0" length="4" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20614" name="GBLT" description="" precision="0" scale="0" length="2" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20615" name="GBSBL" description="" precision="0" scale="0" length="8" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20616" name="GBCO" description="" precision="0" scale="0" length="5" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20617" name="GBAPYC" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20618" name="GBAN01" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20619" name="GBAN02" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20620" name="GBAN03" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20621" name="GBAN04" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20622" name="GBAN05" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20623" name="GBAN06" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20624" name="GBAN07" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20625" name="GBAN08" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20626" name="GBAN09" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20627" name="GBAN10" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20628" name="GBAN11" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20629" name="GBAN12" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20630" name="GBAN13" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20631" name="GBAN14" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20632" name="GBAPYN" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20633" name="GBAWTD" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20634" name="GBBORG" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20635" name="GBPOU" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20636" name="GBPC" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20637" name="GBTKER" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20638" name="GBBREQ" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20639" name="GBBAPR" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20640" name="GBMCU" description="" precision="0" scale="0" length="12" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20641" name="GBOBJ" description="" precision="0" scale="0" length="6" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20642" name="GBSUB" description="" precision="0" scale="0" length="8" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20643" name="GBUSER" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20644" name="GBPID" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20645" name="GBUPMJ" description="" precision="6" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20646" name="GBJOBN" description="" precision="0" scale="0" length="10" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20647" name="GBSBLT" description="" precision="0" scale="0" length="1" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20648" name="GBUPMT" description="" precision="38" scale="0" length="0" dataType="numeric" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="20649" name="GBCRCD" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/>
+<externalMetadataColumn id="20650" name="GBCRCX" description="" precision="0" scale="0" length="3" dataType="str" codePage="1252" mappedColumnId="0"/></externalMetadataColumns></input>
+</inputs>
+</component>
+</components>
+<paths>
+<path id="20692" name="OLE DB Source Output" description="" startId="20437" endId="20600"/>
+</paths></pipeline></DTS:ObjectData></DTS:Executable>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{758AB628-6B72-4346-B081-14E477822818}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{AFF7B905-6052-45BC-81F6-2E4E3209D70E}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">Constraint</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C49EFD84-F21A-4E66-8506-7CB3E9200560}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="ObjectName">F0902</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{691E0EB7-7C3A-4406-A2E7-2FD7204A1B0B}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">SSIS.Package.2</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;ConnectionManager xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DataSourceID&gt;JDEPROD&lt;/dwd:DataSourceID&gt;&lt;/ConnectionManager&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{1AB82DE5-CD77-4940-BFFA-F9EDCF4E0F7C}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{D0A4481B-CD31-4C91-909D-574817ED430A}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsControlFlowDiagram&gt;&lt;dwd:BoundingLeft&gt;1000&lt;/dwd:BoundingLeft&gt;&lt;dwd:BoundingTop&gt;1000&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="0" scrolltop="0" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="27993" y="14208" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Data Flow Task" left="1000" top="3078" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{AFF7B905-6052-45BC-81F6-2E4E3209D70E}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Script Task" left="1036" top="1000" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{758AB628-6B72-4346-B081-14E477822818}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="2950" top="1765" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="835" height="1813" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{C49EFD84-F21A-4E66-8506-7CB3E9200560}" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector sourceid="2" destid="1" sourceattachpoint="9" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="3385" y="2164" /&gt;
+      &lt;point x="3385" y="2849" /&gt;
+      &lt;point x="3349" y="2849" /&gt;
+      &lt;point x="3349" y="3078" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;/dwd:DtsControlFlowDiagram&gt;&lt;/Package&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{691E0EB7-7C3A-4406-A2E7-2FD7204A1B0B}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{61134A29-8F1D-436F-B8F3-31A76DCF80F7}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;TaskHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsDataFlowDiagram&gt;&lt;dwd:BoundingTop&gt;-2079&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="0" scrolltop="-3000" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="27993" y="13282" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="0" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="OLE DB Source" left="0" top="-2079" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{AFF7B905-6052-45BC-81F6-2E4E3209D70E}/components/20427" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Flat File Destination" left="398" top="2921" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{AFF7B905-6052-45BC-81F6-2E4E3209D70E}/components/20599" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="1400" top="-1314" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="1197" height="4735" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{AFF7B905-6052-45BC-81F6-2E4E3209D70E}/paths/20692" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="1" destid="2" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="1799" y="-915" /&gt;
+      &lt;point x="1799" y="1003" /&gt;
+      &lt;point x="2197" y="1003" /&gt;
+      &lt;point x="2197" y="2921" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;dwd:PersistedViewPortTop&gt;-3000&lt;/dwd:PersistedViewPortTop&gt;&lt;/dwd:DtsDataFlowDiagram&gt;&lt;dwd:DtsComponentDesignerPropertiesList&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;948	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;13218	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;12804	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;1	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;1	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;20427	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;/dwd:DtsComponentDesignerPropertiesList&gt;&lt;/TaskHost&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{AFF7B905-6052-45BC-81F6-2E4E3209D70E}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{A92B1044-296D-4B06-9BFD-176F2DFEAC25}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PipelinePath xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:SourceName&gt;OLE DB Source Output&lt;/dwd:SourceName&gt;&lt;dwd:DestinationName&gt;Flat File Destination Input&lt;/dwd:DestinationName&gt;&lt;/PipelinePath&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{AFF7B905-6052-45BC-81F6-2E4E3209D70E}-20692</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{BD0CB62C-E441-440C-8511-D9AFCC625A73}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PrecedenceConstraint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:EvalOp&gt;Constraint&lt;/dwd:EvalOp&gt;&lt;/PrecedenceConstraint&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{C49EFD84-F21A-4E66-8506-7CB3E9200560}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{D7788A89-F175-4DE1-BAC1-0BF5350E1AB1}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsControlFlowDiagram&gt;&lt;dwd:BoundingLeft&gt;1000&lt;/dwd:BoundingLeft&gt;&lt;dwd:BoundingTop&gt;1000&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="0" scrolltop="0" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="27993" y="14208" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Data Flow Task" left="1000" top="3078" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{AFF7B905-6052-45BC-81F6-2E4E3209D70E}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Script Task" left="1036" top="1000" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{758AB628-6B72-4346-B081-14E477822818}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="2950" top="1765" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="835" height="1813" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{C49EFD84-F21A-4E66-8506-7CB3E9200560}" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector sourceid="2" destid="1" sourceattachpoint="9" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="3385" y="2164" /&gt;
+      &lt;point x="3385" y="2849" /&gt;
+      &lt;point x="3349" y="2849" /&gt;
+      &lt;point x="3349" y="3078" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;/dwd:DtsControlFlowDiagram&gt;&lt;/Package&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">package-diagram</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{376DC582-F3EA-4117-A4FD-FE60E7A19439}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable></DTS:Executable>
